@@ -12,9 +12,9 @@
 * Mark: raise a new issue for indicating the end of a header block
 * Mark: raise a new issue about assuring that routing data (e.g., :host, :path, :scheme) appears before headers
 * Roberto: make detailed proposal for frame size w/ continuation bit **DONE**
-* Will: make a detailed proposal for session-level flow control. Initial values to be 64k.
+* Will: make a detailed proposal for session-level flow control. Initial values to be 64k. **DONE**
 * Eliot: amend his record to accommodate "initial options"
-* Roberto: forward complete proposal from spdy4 for grouping and re-prioritisation
+* Roberto: forward complete proposal from spdy4 for grouping and re-prioritisation  
 * Hasan: write a proposal for pushpromise; moving associated-to from synstream to it.
 * Will: double check that spdy's change to directionality for max streams has made it into http/2, or raise issue.  **DONE**
 * Editors: flesh out security considerations for server push, or note in new issue
