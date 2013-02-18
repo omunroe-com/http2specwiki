@@ -7,10 +7,10 @@
 * Roberto: revise draft and ship new example code for delta
 * Herve: publish draft and ship example code for headerdiff
 * Roberto / Will / Hasan: assure that SPDY4 changes are raised as issues for WG to consider, or given to editors if purely editorial
-* Mark: raise a new issue for handing Expect/100-continue
-* Mark: raise a new issue for negotiation of trailers
-* Mark: raise a new issue for indicating the end of a header block
-* Mark: raise a new issue about assuring that routing data (e.g., :host, :path, :scheme) appears before headers
+* Mark: raise a new issue for handing Expect/100-continue  **DONE**
+* Mark: raise a new issue for negotiation of trailers   **DONE**
+* Mark: raise a new issue for indicating the end of a header block  **DONE**
+* Mark: raise a new issue about assuring that routing data (e.g., :host, :path, :scheme) appears before headers  **DONE**
 * Roberto: make detailed proposal for frame size w/ continuation bit **DONE**
 * Will: make a detailed proposal for session-level flow control. Initial values to be 64k. **DONE**
 * Eliot: amend his record to accommodate "initial options"
