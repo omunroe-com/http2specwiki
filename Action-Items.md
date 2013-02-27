@@ -5,7 +5,7 @@
 * Martin: explain use case for weights in the DNS record
 * Eliot: revise his RR proposal based upon discussion
 * Roberto: revise draft and ship new example code for delta
-* Herve: publish draft and ship example code for headerdiff
+* Herve: publish draft and ship example code for headerdiff **DONE**
 * Roberto / Will / Hasan: assure that SPDY4 changes are raised as issues for WG to consider, or given to editors if purely editorial
 * Mark: raise a new issue for handing Expect/100-continue  **DONE**
 * Mark: raise a new issue for negotiation of trailers   **DONE**
