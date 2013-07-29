@@ -7,4 +7,4 @@ This wiki tracks known implementations of HTTP/2. Please include:
 
 ***
 
-* [nghttp2](https://github.com/tatsuhiro-t/nghttp2); C; client, server, intermediary; draft-04
+* [nghttp2](https://github.com/tatsuhiro-t/nghttp2); C; client + server + intermediary; draft-04
