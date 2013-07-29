@@ -1,6 +1,6 @@
 This wiki tracks known implementations of HTTP/2. Please include:
 
-* a link
+* a link (to source, if available, or to more general information about the product/service if not)
 * the implementation language
 * the roles implemented (client, server, intermediary)
 * the draft version implemented
