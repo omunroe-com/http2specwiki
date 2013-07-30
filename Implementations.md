@@ -10,3 +10,5 @@ Please include:
 ***
 
 * [nghttp2](https://github.com/tatsuhiro-t/nghttp2); C; client + server + intermediary; draft-04
+* [http2-katana](https://github.com/MSOpenTech/http2-katana); C#; server + test client; draft-04
+* [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client; draft-04
