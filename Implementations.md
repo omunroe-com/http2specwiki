@@ -5,10 +5,12 @@ Please include:
 * a link (to source, if available, or to more general information about the product/service if not)
 * the implementation language
 * the roles implemented (client, server, intermediary)
+* negotiation mechanisms supported (ALPN, NPN, Upgrade, direct)
 * the draft version implemented
 
 ***
 
 * [nghttp2](https://github.com/tatsuhiro-t/nghttp2); C; client + server + intermediary; draft-04
-* [http2-katana](https://github.com/MSOpenTech/http2-katana); C#; server + test client; draft-04
-* [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client; draft-04
+* [http2-katana](https://github.com/MSOpenTech/http2-katana); C#; server + test client;; draft-04
+* [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client;; draft-04
+* [Mozilla](https://wiki.mozilla.org/Networking/http2); C++; client; ALPN + NPN; draft-04
