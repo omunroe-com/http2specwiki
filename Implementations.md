@@ -11,6 +11,12 @@ Please include:
 ***
 
 * [nghttp2](https://github.com/tatsuhiro-t/nghttp2); C; client + server + intermediary; draft-04
-* [http2-katana](https://github.com/MSOpenTech/http2-katana); C#; server + test client;; draft-04
-* [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client;; draft-04
+* [http2-katana](https://github.com/MSOpenTech/http2-katana); C#; server + test client; ALPN + Upgrade; draft-04
+* [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client; direct; draft-04
 * [Mozilla](https://wiki.mozilla.org/Networking/http2); C++; client; ALPN + NPN; draft-04
+* [http2-perl](); Perl; client + server; NPN; draft-04
+* [iij-http2](); NodeJS; client + server; NPN + Upgrade (client) + direct; draft-04
+* [Akamai Ghost](); C++; intermediary; NPN; draft-04
+* [Fred's Chrome](); C++; client; ALPN + NPN; draft-04
+* [Hasan's GFE](); C++; intermediary; ALPN + NPN; draft-04
+* [Twitter](); Java; server + client; NPN + ALPN (soon); draft-04
