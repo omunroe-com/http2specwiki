@@ -1,0 +1,1 @@
+If you wish to test HTTP/2 with Google's properties, please contact [Hasan Khalil](hkhalil@google.com).
