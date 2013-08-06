@@ -1,6 +1,6 @@
 # Akamai Ghost
 
-A test server / intermediary
+A test server / intermediary. Contact [Stephen Ludin](sludin@akamai.com) for questions.
 
 * IP address: 72.247.216.66
 * Port: 443
