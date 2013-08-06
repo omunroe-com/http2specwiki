@@ -1,6 +1,6 @@
 # Fred's Chromium
 
-A build of Chrome that supports HTTP/2 
+A build of Chrome that supports HTTP/2. Contact [Fred Akalin](akalin@google.com) if you have questions.
 
 ## Instructions
 
