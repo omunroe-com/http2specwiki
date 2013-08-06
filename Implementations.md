@@ -17,6 +17,6 @@ Please include:
 * [http2-perl](); Perl; client + server; NPN; draft-04
 * [iij-http2](); NodeJS; client + server; NPN + Upgrade (client) + direct; draft-04
 * [Akamai Ghost](); C++; intermediary; NPN; draft-04
-* [Fred's Chrome](); C++; client; ALPN + NPN; draft-04
+* [Fred's Chromium](Fredschromium); C++; client; ALPN + NPN; draft-04
 * [Hasan's GFE](); C++; intermediary; ALPN + NPN; draft-04
 * [Twitter](); Java; server + client; NPN + ALPN (soon); draft-04
