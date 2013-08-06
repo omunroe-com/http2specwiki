@@ -2,7 +2,7 @@ This wiki tracks known implementations of HTTP/2. If you have push access to the
 
 Please include:
 
-* a link (to source, if available, or to more general information about the product/service if not)
+* a link (to source, if available, or to more general information about the product/service if not; include contact information)
 * the implementation language
 * the roles implemented (client, server, intermediary)
 * negotiation mechanisms supported (ALPN, NPN, Upgrade, direct)
