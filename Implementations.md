@@ -20,3 +20,4 @@ Please include:
 * [Chromium](https://sites.google.com/a/chromium.org/dev/http2); C++; client; ALPN + NPN; draft-04
 * [Hasan's GFE](Hasansgfe); C++; intermediary; ALPN + NPN; draft-04
 * [Twitter](); Java; server + client; NPN + ALPN (soon); draft-04
+* [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042); C; other; NPN + ALPN; draft-06
