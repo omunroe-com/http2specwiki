@@ -12,7 +12,7 @@ Please include:
 
 * [nghttp2](https://github.com/tatsuhiro-t/nghttp2); C; client + server + intermediary; NPN + Upgrade + direct; draft-06
 * [http2-katana](https://github.com/MSOpenTech/http2-katana); C#; server + test client; ALPN + Upgrade; draft-04
-* [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client; direct; draft-04
+* [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client; NPN + direct; draft-06
 * [Mozilla](https://wiki.mozilla.org/Networking/http2); C++; client; ALPN + NPN; draft-04
 * [http2-perl](https://github.com/sludin/http2-perl); Perl; client + server; NPN; draft-04
 * [iij-http2](https://github.com/shigeki/interop-iij-http2); NodeJS; client + server; NPN + Upgrade (client) + direct; draft-04
