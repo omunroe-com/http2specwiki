@@ -15,7 +15,7 @@ Please include:
 * [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client; NPN + direct; draft-06
 * [Mozilla](https://wiki.mozilla.org/Networking/http2); C++; client; ALPN + NPN; draft-06
 * [http2-perl](https://github.com/sludin/http2-perl); Perl; client + server; NPN; draft-04
-* [iij-http2](https://github.com/shigeki/interop-iij-http2); NodeJS; client + server; NPN + Upgrade (client) + direct; draft-04
+* [iij-http2](https://github.com/shigeki/interop-iij-http2); NodeJS; client + server; ALPN + NPN + Upgrade + direct; draft-06
 * [Akamai Ghost](Akamaighost); C++; intermediary; NPN; draft-06
 * [Chromium](https://sites.google.com/a/chromium.org/dev/http2); C++; client; ALPN + NPN; draft-04
 * [Hasan's GFE](Hasansgfe); C++; intermediary; ALPN + NPN; draft-04
