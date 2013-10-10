@@ -21,3 +21,4 @@ Please include:
 * [Hasan's GFE](Hasansgfe); C++; intermediary; ALPN + NPN; draft-04
 * [Twitter](https://twitter.com/); Java; server + client; NPN; draft-06
 * [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042); C; other; NPN + ALPN; draft-06
+* [Ericsson MPS](EricssonMPS); proxy; NPN + Upgrade + direct; draft-06 
