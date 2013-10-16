@@ -1,5 +1,3 @@
 Things we have learned and common mistakes - todo
 
-TODO(willchan): Copy in advice from SPDY Best Practices doc
-
-TODO(willchan): Note the common bug with allocating stream ids in monotonically increasing order, and how people often screw it up due to priority queues. Can't commit to a stream id when generating a frame and inserting into a priority queue.
+* The spec notes that [stream ids must be increasing](http://http2.github.io/http2-spec/#StreamIdentifiers), but this can be easy to accidentally violate. If after frame generation, you insert the frame into a priority queue, then it's possible for a higher priority frame to move ahead. Therefore, stream ids must be generated/committed later in processing in order to ensure correct stream id ordering.
