@@ -1,3 +1,5 @@
 Things we have learned and common mistakes - todo
 
 * The spec notes that [stream ids must be increasing](http://http2.github.io/http2-spec/#StreamIdentifiers), but this can be easy to accidentally violate. If after frame generation, you insert the frame into a priority queue, then it's possible for a higher priority frame to move ahead. Therefore, stream ids must be generated/committed later in processing in order to ensure correct stream id ordering.
+
+* Implementations need to make sure they are always pumping data from the underlying transport to the HTTP/2 layer, otherwise there can be hangs. This is because a sender may be blocked on a zero flow control window. If it doesn't keep reading data from the socket, it may not pick up the WINDOW_UPDATE frame that reopens the flow control window.
