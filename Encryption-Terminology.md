@@ -15,3 +15,5 @@ In these definitions, "cryptographic material" is used instead of "encryption ke
 **Opportunistic encryption** -- A process that causes best-effort encryption to happen without an initiator attempting to start encryption.
 
 Current HTTP using TLS is never opportunistic because HTTP over TLS always starts on port 443, not port 80. There are now proposals to create opportunistic encryption in HTTP/2 by either redirecting an HTTP/2 connection to port 443 or by initiating best-effort encryption in HTTP/2 headers.
+
+In other protocols, opportunistic encryption is via a non-mandatory "Start TLS" style extension.
