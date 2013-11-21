@@ -2,9 +2,13 @@ Note that these terms apply **only** to TLS that uses (possible) server authenti
 
 In these definitions, "cryptographic material" is used instead of "encryption key" because the process produces other important outputs.
 
+## End States
+
 **Server-authenticated encryption** -- Encryption that follows a process that ends with shared cryptographic material. During the agreement process, the client authenticated the server's identity in some way (such as through a trusted third party or pre-existing cryptographic knowledge). Active attackers who inserted themselves in the process would cause the process to fail and return no shared cryptographic material. 
 
 **Better-than-nothing encryption** -- Encryption that follows a process that ends with shared cryptographic material. During the agreement process, the client did not authenticate the server's identity. Active attackers may have inserted themselves in the process could know the cryptographic material and thus be able to decrypt subsequent traffic that uses the derived keys. 
+
+## Processes
 
 **Best-effort encryption** -- A process to establish cryptographic material. In this process, the client attempts to authenticate the server's identity but, if that is not possible, continues anyway. The result of best-effort encryption is either server-authenticated encryption or better-than-nothing encryption.
 
