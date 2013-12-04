@@ -1,4 +1,4 @@
-# HTTP Proxy User Stories
+_This is a list of user stories for HTTP proxies. Feel free to elaborate or add new stories._
 
 ## Alex's Enterprise-Supplied Laptop
 
