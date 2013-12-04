@@ -44,22 +44,19 @@ The virus scanner achieves this currently by inserting a CA into Francene's trus
 
 Grant uses a proxy to debug his application, and needs "raw" access to the data stream. Like Francene, he can achieve this by inserting a CA into his trust store and MITM'ing the stream, but this is cumbersome.
 
-## Henrietta's Firewall
+## Henrietta's Jailhouse Schoolroom
 
-## Ian's Jailhouse Schoolroom
+Henrietta runs an educational institution inside a house of incarceration (since they share so many attributes). While her student inmates are allowed to surf the Web, they are not allowed to access prohibited resources -- indicated by URL as well as content. 
 
-Ian runs an educational institution inside a house of incarceration (since they share so many attributes). While his student inmates are allowed to surf the Web, they are not allowed to access prohibited resources -- indicated by URL as well as content. 
+As a result, Henrietta needs to see **all** traffic that goes by.
 
-As a result, Ian needs to see **all** traffic that goes by.
+## Ian's Compliance Mission
 
-## Jane's Compliance Mission
+Ian is an executive in a fictional ethical banking institution. He needs to ensure that his employees are complying with various legal requirements as they use the Web. In particular, he wants to assure that proprietary and sensitive information is not leaving via upload forms, etc. 
 
-Jane is an executive in a fictional ethical banking institution. She needs to ensure that her employees are complying with various legal requirements as they use the Web. In particular, she wants to assure that proprietary and sensitive information is not leaving via upload forms, etc. 
+As a result, he needs access to all outgoing content.
 
-As a result, she needs access to all outgoing content.
+## Jane's Thing
 
-## Kent's Thing
-
-Kent has a new Internet of Things device of some sort in his house, but he also has an access gateway that proxies all HTTP to the outside world. As such, he needs to easily configure it to use the proxy.
-
+Jane has a new Internet of Things device of some sort in her house, but she also has an access gateway that proxies all HTTP to the outside world. As such, she needs to easily configure it to use the proxy.
 
