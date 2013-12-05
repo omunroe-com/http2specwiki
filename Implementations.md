@@ -10,7 +10,7 @@ Please include:
 
 ***
 
-* [nghttp2](https://github.com/tatsuhiro-t/nghttp2); C; client + server + intermediary; NPN + Upgrade + direct; draft-07
+* [nghttp2](https://github.com/tatsuhiro-t/nghttp2); C; client + server + intermediary; NPN + Upgrade + direct; draft-09
 * [http2-katana](https://github.com/MSOpenTech/http2-katana); C#; server + test client; ALPN + Upgrade; draft-06
 * [node-http2](https://github.com/molnarg/node-http2); JavaScript (NodeJS); server + client; ALPN + NPN + direct; draft-07
 * [Mozilla](https://wiki.mozilla.org/Networking/http2); C++; client; ALPN + NPN; draft-07
