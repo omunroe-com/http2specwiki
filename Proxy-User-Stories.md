@@ -24,9 +24,9 @@ Charlie doesn't want to intercept his customers' traffic after that, but he does
 
 Darlene is an executive at a mobile provider, and is responsible for building out their network. If Darlene's customers use too much bandwidth, she needs to deploy very expensive cell towers to provide capacity, which in turn means she needs to raise prices, potentially making her company less competitive.
 
-Therefore, Darlene has a strong incentive to save bandwidth. By intercepting and transcoding Web traffic -- e.g., images and especially videos -- she can increase the capacity of her network, often (but not always) without the end user noticing (since they tend to be using smaller screens than the original video was intended for).
+Therefore, Darlene has a strong incentive to save bandwidth or downgrade QoS for a category of traffic. By intercepting Web traffic, she can increase the capacity and responsiveness of her network by transcoding or downgrading QoS for content -- e.g. images and especially videos -- often (but not always) without the end user noticing (since they tend to be using smaller screens than the original video was intended for).
 
-While Darlene used to apply these optimisations across the board, recently she has been using products that adapt to load and "hot spots" in her network, so that she only transcodes when she needs to.
+While Darlene used to apply these optimisations across the board, recently she has been using products that adapt to load and "hot spots" in her network, so that she only optimises when she needs to.
 
 ## Eliot's Village Internet Connection
 
