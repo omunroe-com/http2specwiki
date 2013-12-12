@@ -60,3 +60,6 @@ As a result, he needs access to all outgoing content.
 
 Jane has a new Internet of Things device of some sort in her house, but she also has an access gateway that proxies all HTTP to the outside world. As such, she needs to easily configure it to use the proxy.
 
+## Dan's Kids
+
+Dan's kids use all kinds of internet-connected devices in his family home, such as laptops, desktops and phones. He wants to maintain a proxy that limits access to certain Web sites from any of these devices attached to his home network to keep his kids on the safer side of the Web.
