@@ -1,4 +1,4 @@
-This wiki tracks known implementations of HTTP/2. If you have push access to the repository, you can update it; otherwise, send requests to [Mark Nottingham](mailto:mnot@mnot.net).
+This wiki tracks known implementations of HTTP/2. If you have questions or issues updating it, please contact [Mark Nottingham](mailto:mnot@mnot.net).
 
 implementation | language | role(s) | negotiation(s) | draft support
 --- | --- | --- | --- | ---
