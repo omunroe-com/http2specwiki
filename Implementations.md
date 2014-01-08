@@ -16,3 +16,4 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Ericsson MSP](EricssonMPS) | | proxy | NPN, Upgrade, direct | draft-06
 [http2-go](https://github.com/Jxck/http2) | golang | client, server | Upgrade | draft-06
 [OkHttp](https://github.com/square/okhttp) | Java | mock server, client | NPN | **draft-09**
+[mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client | ALPN, NPN | **draft-09**
