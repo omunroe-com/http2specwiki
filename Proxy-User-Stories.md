@@ -63,3 +63,7 @@ Jane has a new Internet of Things device of some sort in her house, but she also
 ## Dan's Kids
 
 Dan's kids use all kinds of internet-connected devices in his family home, such as laptops, desktops and phones. He wants to maintain a proxy that limits access to certain Web sites from any of these devices attached to his home network to keep his kids on the safer side of the Web.
+
+## Gautam's Mobile Identity Proxy
+
+Gautam runs a Mobile Identity Proxy in a Mobile Network and needs to add the real/anonymous mobile identity of the user as HTTP header, to facilitate the seamless authentication of the user by the service provider. 
