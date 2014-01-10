@@ -8,3 +8,4 @@ Python | [native](http://docs.python.org/3/library/ssl.html) | [requested](http:
 Python | [tlslite](http://trevp.net/tlslite/) | [requested](https://github.com/trevp/tlslite/issues/19) | 
 Go | [native](http://golang.org/pkg/crypto/tls/) | [requested](https://code.google.com/p/go/issues/detail?id=6736) |
 C++ | [yaSSL](http://www.wolfssl.com/yaSSL/) | [requested](https://github.com/cyassl/cyassl/issues/66) |
+JavaScript | [NodeJS](http://nodejs.org/api/tls.html) | [requested](https://github.com/joyent/node/issues/5945) | waiting for stable OpenSSL
