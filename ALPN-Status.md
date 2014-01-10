@@ -10,4 +10,4 @@ Python | [tlslite](http://trevp.net/tlslite/) | [requested](https://github.com/t
 Go | [native](http://golang.org/pkg/crypto/tls/) | [requested](https://code.google.com/p/go/issues/detail?id=6736) |
 C++ | [yaSSL](http://www.wolfssl.com/yaSSL/) | [requested](https://github.com/cyassl/cyassl/issues/66) |
 JavaScript | [NodeJS](http://nodejs.org/api/tls.html) | [requested](https://github.com/joyent/node/issues/5945) | waiting for stable OpenSSL
-Ruby | [native](http://ruby-doc.org/stdlib-2.0/libdoc/openssl/rdoc/OpenSSL.html) | [requested](https://bugs.ruby-lang.org/issues/9388) | OpenSSL-based
+Ruby | [native](http://ruby-doc.org/stdlib-2.0/libdoc/openssl/rdoc/OpenSSL.html) | [requested](https://bugs.ruby-lang.org/issues/9390) | OpenSSL-based
