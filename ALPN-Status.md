@@ -11,4 +11,4 @@ Go | [native](http://golang.org/pkg/crypto/tls/) | [requested](https://code.goog
 C++ | [yaSSL](http://www.wolfssl.com/yaSSL/) | [requested](https://github.com/cyassl/cyassl/issues/66) |
 JavaScript | [NodeJS](http://nodejs.org/api/tls.html) | [requested](https://github.com/joyent/node/issues/5945) | waiting for stable OpenSSL
 Ruby | [native](http://ruby-doc.org/stdlib-2.0/libdoc/openssl/rdoc/OpenSSL.html) | [requested](https://bugs.ruby-lang.org/issues/9390) | OpenSSL-based
-C++ | [SChannel](http://technet.microsoft.com/en-us/library/hh831771.aspx) | in current release | Added in Windows 8.1 / Server 2012 R2
+C++ | [SChannel](http://technet.microsoft.com/en-us/library/hh831771.aspx) | released | Added in Windows 8.1 / Server 2012 R2
