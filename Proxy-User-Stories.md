@@ -67,3 +67,9 @@ Dan's kids use all kinds of internet-connected devices in his family home, such 
 ## Gautam's Mobile Identity Proxy
 
 Gautam runs a Mobile Identity Proxy in a Mobile Network and needs to add the real/anonymous mobile identity of the user as HTTP header, to facilitate the seamless authentication of the user by the service provider. 
+
+## Bob's Music Service
+
+Bob manages a very popular Rock music web site based on individual subscription and per month fee. To develop his business he partnered with a mobile operator who wants to provide rock music as bonus to his premium data subscribers.
+Alice is fond of Rock music. Thanks to her premium data subscription plan, Alice has an unlimited access to a Rock music web site. Thanks to service augmentation Alice has a seamless access to its favorite streaming music. Alice loves this seamless approach which protects her privacy and avoids her to remember yet another login and password couple. 
+
