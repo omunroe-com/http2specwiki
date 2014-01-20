@@ -73,3 +73,7 @@ Gautam runs a Mobile Identity Proxy in a Mobile Network and needs to add the rea
 Bob manages a very popular Rock music web site based on individual subscription and per month fee. To develop his business he partnered with a mobile operator who wants to provide rock music as bonus to his premium data subscribers.
 Alice is fond of Rock music. Thanks to her premium data subscription plan, Alice has an unlimited access to a Rock music web site. Thanks to service augmentation Alice has a seamless access to its favorite streaming music. Alice loves this seamless approach which protects her privacy and avoids her to remember yet another login and password couple. 
 
+## Diane's kids' mobile devices
+
+Diane's kids use mobile devices such as phones and tablets outside home. Diane wants to sign up those devices with mobile operator's parental control service which is set up through a proxy to limit access from those devices to certain web sites to keep her kids browsing safely also limit certain contents like video streaming when close to the data plan quota in order to keep the data usage under control and no surprise bill.
+
