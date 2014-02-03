@@ -60,33 +60,33 @@ As a result, he needs access to all outgoing content.
 
 Jane has a new Internet of Things device of some sort in her house, but she also has an access gateway that proxies all HTTP to the outside world. As such, she needs to easily configure it to use the proxy.
 
-## Dan's Kids
+## Kirk's Kids
 
-Dan's kids use all kinds of internet-connected devices in his family home, such as laptops, desktops and phones. He wants to maintain a proxy that limits access to certain Web sites from any of these devices attached to his home network to keep his kids on the safer side of the Web.
+Kirk's kids use all kinds of internet-connected devices in his family home, such as laptops, desktops and phones. He wants to maintain a proxy that limits access to certain Web sites from any of these devices attached to his home network to keep his kids on the safer side of the Web.
 
-## Gautam's Mobile Identity Proxy
+## Liam's Mobile Identity Proxy
 
-Gautam runs a Mobile Identity Proxy in a Mobile Network and needs to add the real/anonymous mobile identity of the user as HTTP header, to facilitate the seamless authentication of the user by the service provider. 
+Liam runs a Mobile Identity Proxy in a Mobile Network and needs to add the real/anonymous mobile identity of the user as HTTP header, to facilitate the seamless authentication of the user by the service provider. 
 
-## Bob's Music Service
+## Mike's Music Service
 
-Bob manages a very popular Rock music web site based on individual subscription and per month fee. To develop his business he partnered with a mobile operator who wants to provide rock music as bonus to his premium data subscribers.
+Mike manages a very popular Rock music web site based on individual subscription and per month fee. To develop his business he partnered with a mobile operator who wants to provide rock music as bonus to his premium data subscribers.
 Alice is fond of Rock music. Thanks to her premium data subscription plan, Alice has an unlimited access to a Rock music web site. Thanks to service augmentation Alice has a seamless access to its favorite streaming music. Alice loves this seamless approach which protects her privacy and avoids her to remember yet another login and password couple. 
 
-## Diane's kids' mobile devices
+## Nancy's kids' mobile devices
 
-Diane's kids use mobile devices such as phones and tablets outside home. Diane wants to sign up those devices with mobile operator's parental control service which is set up through a proxy to limit access from those devices to certain web sites to keep her kids browsing safely also limit certain contents like video streaming when close to the data plan quota in order to keep the data usage under control and no surprise bill.
+Nancy's kids use mobile devices such as phones and tablets outside home. Nancy wants to sign up those devices with mobile operator's parental control service which is set up through a proxy to limit access from those devices to certain web sites to keep her kids browsing safely also limit certain contents like video streaming when close to the data plan quota in order to keep the data usage under control and no surprise bill.
 
-## Bob’s Certification Company
+## Oscar’s Certification Company
  
-Bob runs an on-site education testing and professional certification company. His clients are students that need to take the online tests like TOEFEL, SAT as well as individuals required by their profession to getting/renewing their certification.
-Due to the nature of the business and in order to prevent cheating, Bob has restricted access to only the online sites offering the tests during the testing hours. In order to maintain his credibility with the certification organizations he needs to make sure that employee authenticate and their access to the testing sites is monitored for audit purposes.
+Oscar runs an on-site education testing and professional certification company. His clients are students that need to take the online tests like TOEFEL, SAT as well as individuals required by their profession to getting/renewing their certification.
+Due to the nature of the business and in order to prevent cheating, Oscar has restricted access to only the online sites offering the tests during the testing hours. In order to maintain his credibility with the certification organizations he needs to make sure that employee authenticate and their access to the testing sites is monitored for audit purposes.
  
-## Alice’s Flowers delivery company
+## Pam’s Flowers delivery company
 
-Alice owns a flower delivery company and just she started taking orders online. She got feedback that while some of his customers are frequently ordering from their mobile phones, others call in because they don’t want to pay for the data. In order to grow the business and reduce costs associated with the dedicated phone order representatives, she partnered with several mobile operators to cover and pay for the data usage associated with his customers’ access to her website.
+Pam owns a flower delivery company and just she started taking orders online. She got feedback that while some of his customers are frequently ordering from their mobile phones, others call in because they don’t want to pay for the data. In order to grow the business and reduce costs associated with the dedicated phone order representatives, she partnered with several mobile operators to cover and pay for the data usage associated with his customers’ access to her website.
  
-## Rick’s Online Movie download store
+## Quincy’s Online Movie download store
  
-Rick runs successful business allowing his customers to download movies for rent or to buy.  His customers are increasingly using their smartphones to view the movies on the go but a common complaint was that with the increased size of the downloads  they had no way to intuitively determine if they reached their data plan limits and incurred significant overcharges.
-Rick had partnered with several mobile operators and his developers are able to receive in real-time (in a form of a custom header) the remaining data value for the current billing cycle. With this enhancement, Rick was able to preemptively and accurately notify his customers when they were close to reaching their limits without the need for his users to disclose their phone numbers and therefore minimize the information he collected from them. 
+Quincy runs successful business allowing his customers to download movies for rent or to buy.  His customers are increasingly using their smartphones to view the movies on the go but a common complaint was that with the increased size of the downloads  they had no way to intuitively determine if they reached their data plan limits and incurred significant overcharges.
+Quincy had partnered with several mobile operators and his developers are able to receive in real-time (in a form of a custom header) the remaining data value for the current billing cycle. With this enhancement, Quincy was able to preemptively and accurately notify his customers when they were close to reaching their limits without the need for his users to disclose their phone numbers and therefore minimize the information he collected from them. 
