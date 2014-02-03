@@ -82,9 +82,9 @@ Nancy's kids use mobile devices such as phones and tablets outside home. Nancy w
 Oscar runs an on-site education testing and professional certification company. His clients are students that need to take the online tests like TOEFEL, SAT as well as individuals required by their profession to getting/renewing their certification.
 Due to the nature of the business and in order to prevent cheating, Oscar has restricted access to only the online sites offering the tests during the testing hours. In order to maintain his credibility with the certification organizations he needs to make sure that employee authenticate and their access to the testing sites is monitored for audit purposes.
  
-## Pam’s Flowers delivery company
+## Peter’s Flowers delivery company
 
-Pam owns a flower delivery company and just she started taking orders online. She got feedback that while some of his customers are frequently ordering from their mobile phones, others call in because they don’t want to pay for the data. In order to grow the business and reduce costs associated with the dedicated phone order representatives, she partnered with several mobile operators to cover and pay for the data usage associated with his customers’ access to her website.
+Peter owns a flower delivery company and he just started taking orders online. He got feedback that while some of his customers are frequently ordering from their mobile phones, others call in because they don’t want to pay for the data. In order to grow the business and reduce costs associated with the dedicated phone order representatives, he partnered with several mobile operators to cover and pay for the data usage associated with his customers’ access to his website.
  
 ## Quincy’s Online Movie download store
  
