@@ -90,3 +90,7 @@ Peter owns a flower delivery company and he just started taking orders online. H
  
 Quincy runs successful business allowing his customers to download movies for rent or to buy.  His customers are increasingly using their smartphones to view the movies on the go but a common complaint was that with the increased size of the downloads  they had no way to intuitively determine if they reached their data plan limits and incurred significant overcharges.
 Quincy had partnered with several mobile operators and his developers are able to receive in real-time (in a form of a custom header) the remaining data value for the current billing cycle. With this enhancement, Quincy was able to preemptively and accurately notify his customers when they were close to reaching their limits without the need for his users to disclose their phone numbers and therefore minimize the information he collected from them. 
+
+## Rick’s Fast in-flight Wifi
+
+Rick provides high-bandwidth Wifi in-flight via a satellite network. The high latency of satellite means that HTTP prefetching, caching, and compression are needed to provide the snappy web performance users have come to expect from broadband networks. Like Darlene above, Rick also wants to save bandwidth usage via caching and compression. Rick's users are airline travelers who will temporarily opt-in to trust the proxy and/or only trust the proxy for specific sites.
