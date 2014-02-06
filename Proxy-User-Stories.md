@@ -94,3 +94,6 @@ Quincy had partnered with several mobile operators and his developers are able t
 ## Rick’s Fast in-flight Wifi
 
 Rick provides high-bandwidth Wifi in-flight via a satellite network. The high latency of satellite means that HTTP prefetching, caching, and compression are needed to provide the snappy web performance users have come to expect from broadband networks. Like Darlene above, Rick also wants to save bandwidth usage via caching and compression. Rick's users are airline travelers who will temporarily opt-in to trust the proxy and/or only trust the proxy for specific sites.
+
+## Students 
+Bob and Alice are 2 university students in a developing country. The university forward proxy has a large cache and a limited international connection in order to reduce its network bill. Bob and Alice study network and IT. The students of their section frequently download the same RFCs from the IETF site. In practice, when the proxy downloads a file from the IETF, it saves the document 2 weeks in its cache as far as there is available storage.  Students are very happy with this situation as they access the documents very quickly.
