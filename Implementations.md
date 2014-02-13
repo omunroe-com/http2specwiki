@@ -18,3 +18,4 @@ implementation | language | role(s) | negotiation(s) | draft support
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN (Android 4.4+), NPN | **draft-09**
 [mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client | ALPN, NPN | **draft-09**
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | NPN, direct | draft-06
+[hyper](https://github.com/lukasa/hyper) | Python | client | NPN | **draft-09**
