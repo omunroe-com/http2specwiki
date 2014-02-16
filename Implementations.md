@@ -2,7 +2,7 @@ This wiki tracks known implementations of HTTP/2. If you have questions or issue
 
 implementation | language | role(s) | negotiation(s) | draft support
 --- | --- | --- | --- | ---
-[nghttp2](https://github.com/tatsuhiro-t/nghttp2) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | **draft-09**
+[nghttp2](https://github.com/tatsuhiro-t/nghttp2) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | **draft-10**
 [http2-katana](https://github.com/MSOpenTech/http2-katana) | C# | server, test client | ALPN, Upgrade | **draft-09**
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct | **draft-09**
 [Mozilla](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | **draft-09**
