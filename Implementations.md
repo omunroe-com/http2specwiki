@@ -3,19 +3,19 @@ This wiki tracks known implementations of HTTP/2. If you have questions or issue
 implementation | language | role(s) | negotiation(s) | draft support
 --- | --- | --- | --- | ---
 [nghttp2](https://github.com/tatsuhiro-t/nghttp2) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | **draft-10**
-[http2-katana](https://github.com/MSOpenTech/http2-katana) | C# | server, test client | ALPN, Upgrade | **draft-09**
+[http2-katana](https://github.com/MSOpenTech/http2-katana) | C# | server, test client | ALPN, Upgrade | draft-09
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct | **draft-10**
-[Mozilla](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | **draft-09**
+[Mozilla](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | draft-09
 [http2-perl](https://github.com/sludin/http2-perl) | Perl | client, server | NPN | draft-04
-[iij-http2](https://github.com/shigeki/interop-iij-http2) | NodeJS | client, server, intermediary | ALPN, NPN | **draft-09**
-[Akamai Ghost](Akamaighost) | C++ | intermediary | NPN | **draft-09**
+[iij-http2](https://github.com/shigeki/interop-iij-http2) | NodeJS | client, server, intermediary | ALPN, NPN | draft-09
+[Akamai Ghost](Akamaighost) | C++ | intermediary | NPN | draft-09
 [Chromium](https://sites.google.com/a/chromium.org/dev/http2) | C++ | client | ALPN, NPN | draft-06
 [Hasan's GFE](Hasansgfe) | C++ | intermediary | ALPN, NPN | draft-04
-[Twitter](https://twitter.com/) | Java | server, client | NPN | **draft-09**
-[Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Direct, Upgrade | **draft-09**
+[Twitter](https://twitter.com/) | Java | server, client | NPN | draft-09
+[Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Direct, Upgrade | draft-09
 [Ericsson MSP](EricssonMPS) | | proxy | NPN, Upgrade, direct | draft-06
 [http2-go](https://github.com/Jxck/http2) | golang | client, server | npn | **draft-10**
-[OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN (Android 4.4+), NPN | **draft-09**
-[mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client | ALPN, NPN | **draft-09**
+[OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN (Android 4.4+), NPN | draft-09
+[mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client | ALPN, NPN | draft-09
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | NPN, direct | draft-06
-[hyper](https://github.com/lukasa/hyper) | Python | client | NPN | **draft-09**
+[hyper](https://github.com/lukasa/hyper) | Python | client | NPN | draft-09
