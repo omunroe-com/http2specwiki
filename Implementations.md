@@ -19,3 +19,4 @@ implementation | language | role(s) | negotiation(s) | draft support
 [mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client | ALPN, NPN | draft-09
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | NPN, direct | draft-06
 [hyper](https://github.com/lukasa/hyper) | Python | client | NPN | draft-09
+[curl and libcurl](https://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | (what nghttp2 provides)
