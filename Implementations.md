@@ -2,7 +2,7 @@ This wiki tracks known implementations of HTTP/2. If you have questions or issue
 
 implementation | language | role(s) | negotiation(s) | draft support
 --- | --- | --- | --- | ---
-[nghttp2](https://github.com/tatsuhiro-t/nghttp2) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | draft-11
+[nghttp2](https://github.com/tatsuhiro-t/nghttp2) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | **draft-12**
 [http2-katana](https://github.com/MSOpenTech/http2-katana) | C# | server, test client | ALPN, Upgrade | draft-09
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct | **draft-12**
 [Mozilla](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | draft-09
@@ -19,5 +19,5 @@ implementation | language | role(s) | negotiation(s) | draft support
 [mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client, server | ALPN, NPN, Direct | **draft-12**
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | NPN, direct | draft-06
 [hyper](https://github.com/lukasa/hyper) | Python | client | NPN | draft-09
-[curl and libcurl](https://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | draft-11
+[curl and libcurl](https://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | **draft-12**
 [cl-http2-protocol](https://github.com/akamai-tech/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | draft-09
