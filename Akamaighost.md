@@ -2,7 +2,7 @@
 
 A test server / intermediary. Contact [Stephen Ludin](mailto:sludin@akamai.com) and [Saurabh Kulkarni](mailto:sakulkar@akamai.com) with questions.
 
-* IP address: 72.247.216.66
+* IP address: TBD
 * Port: 443
 * Host headers (and SNI strings):
   * www.akamai.com
