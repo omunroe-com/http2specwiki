@@ -7,6 +7,7 @@ C | [GnuTLS](http://www.gnutls.org/) | [released](http://gnutls.org/manual/html_
 C | [NSS](https://developer.mozilla.org/en/docs/NSS) | [released](https://developer.mozilla.org/en-US/docs/NSS/NSS_3.15.5_release_notes#New_Functionality) | client support only as of 3.15.5; server support still pending (see [bug 996250](https://bugzilla.mozilla.org/show_bug.cgi?id=996250))
 Python | [native](http://docs.python.org/3/library/ssl.html) | [requested](http://bugs.python.org/issue20188) | OpenSSL based; 3.x only
 Python | [tlslite](http://trevp.net/tlslite/) | [requested](https://github.com/trevp/tlslite/issues/19) | 
+Python | [pyOpenSSL](https://github.com/pyca/pyopenssl) | [requested](https://github.com/pyca/pyopenssl/pull/120) | 
 Go | [native](http://golang.org/pkg/crypto/tls/) | [requested](https://code.google.com/p/go/issues/detail?id=6736) |
 C++ | [yaSSL](http://www.wolfssl.com/yaSSL/) | [requested](https://github.com/cyassl/cyassl/issues/66) |
 JavaScript | [NodeJS](http://nodejs.org/api/tls.html) | [requested](https://github.com/joyent/node/issues/5945) | waiting for stable OpenSSL
