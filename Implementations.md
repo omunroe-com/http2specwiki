@@ -20,6 +20,6 @@ implementation | language | role(s) | negotiation(s) | draft support
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | NPN, direct | draft-06
 [hyper](https://github.com/lukasa/hyper) | Python | client | NPN | draft-09
 [curl and libcurl](https://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | **draft-12**
-[cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | draft-12
+[cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | **draft-12**
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN | **draft-12**
 [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=jetty-http2) | Java | client, server | NPN, ALPN | **draft-12**
