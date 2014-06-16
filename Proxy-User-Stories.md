@@ -36,7 +36,7 @@ More encryption of HTTP makes it difficult for the village to deploy a proxy; wh
 
 ## Francine's Virus Scanner
 
-Francene's computer has a virus scanner that needs to inspect all traffic -- encrypted or not -- as it goes by, and potentially modify responses ("cleaning" them), or rejecting them outright.
+Francine's network or Francine's computer has a virus scanner that needs to inspect all traffic -- encrypted or not -- as it goes by, and potentially modify responses ("cleaning" them), or rejecting them outright.
 
 The virus scanner achieves this currently by inserting a CA into Francene's trust store and performing TLS MITM on it.
 
@@ -103,3 +103,7 @@ Tom lives far enough from town that telcos are not able to make the economics wo
 
 ## Ulrich's Censorship Circumvention
 Ulrich is keeping up a collection of proxy servers to help internet users in Elbonia bypass internet censorship in their country. The proxies are set up in jurisdictions outside the censorship regime and control of Elbonian authorities. To thwart deep packet inspection, all connections between the clients and the proxy look to an on-the-wire observer like opaque TLS-encrypted HTTP connections with no discernible features to detect proxy usage. To save network traffic and reduce possibility of detection, the proxies only serve resources that are actually banned, the rest to be retrieved directly by the clients. To this end, proxy auto-configuration scripts are provided for the clients allowing selective proxy usage. "HTTPS" PAC directive could be used as currently implemented by Chrome.
+
+## Vanessa's secret company data
+Vanessa is responsible for data loss prevention at her company.  To achieve this, communication by employees using keywords ("end of quarter missed") and exfiltration of certain files trigger alarms, especially files marked Company Confidential or data containing credit card numbers.
+
