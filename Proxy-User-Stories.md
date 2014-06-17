@@ -107,3 +107,6 @@ Ulrich is keeping up a collection of proxy servers to help internet users in Elb
 ## Vanessa's secret company data
 Vanessa is responsible for data loss prevention at her company.  To achieve this, communication by employees using keywords ("end of quarter missed") and exfiltration of certain files trigger alarms, especially files marked Company Confidential or data containing credit card numbers.
 
+##Wallace's network traffic flow 
+Wallace works for the same mobile network as Darlene (above). Wallace must ensure that the radio towers do not get so congested that data cannot be delivered, or is delivered with an unacceptable latency. Therefore Wallace has configured the radio towers to detect the data content type to distinguish Web browsing, email, VoIP call, video call, streaming video, online gaming messages, chat, etc.. These content types have distinct needs regarding latency and bandwidth, and are queued accordingly and without discrimination to customers or content providers. Wallace utilises a proxy to read the ports and headers which indicate a particular content type.
+
