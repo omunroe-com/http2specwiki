@@ -10,7 +10,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [iij-http2](https://github.com/shigeki/interop-iij-http2) | NodeJS | client, server| ALPN, NPN | draft-12
 [Akamai Ghost](Akamaighost) | C++ | intermediary | NPN | draft-12
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | draft-12
-[Hasan's GFE](Hasansgfe) | C++ | intermediary | ALPN, NPN | draft-04
+[Hasan's GFE](Hasansgfe) | C++ | intermediary | ALPN, NPN | draft-12
 [Twitter](https://twitter.com/) | Java | server, client | NPN | draft-12
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Direct, Upgrade | draft-12
 [Ericsson MSP](EricssonMPS) | | proxy | NPN, Upgrade, direct | draft-06
