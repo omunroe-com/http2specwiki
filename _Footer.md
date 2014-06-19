@@ -1,1 +1,1 @@
-NOTE: All contributions are made under [these terms](/Contributing.md).
+NOTE: All contributions are made under [these terms](https://github.com/http2/http2-spec/blob/master/CONTRIBUTING.md).
