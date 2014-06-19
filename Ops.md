@@ -1,22 +1,4 @@
-HTTP/2 does not change the semantics of HTTP, but it does substantially change how they are mapped to the
-underlying protocols.
-
-While some of these changes can enhance performance and/or operability on their own, getting the full benefit of the new protocol requires changes beyond the scope of just the Web server.
-
-Likewise, HTTP/2 offers new in-protocol mechanisms like header compression, flow control,
-prioritisation and server push. Used effectively, they can improve the performance characteristics
-of the protocol, but they can also cause operability issues if used incorrectly.
-
-This document gives advice about both cases; how to configure lower-layer protocols, as well as how
-to use HTTP/2's in-built mechanisms effectively. 
-
-It is primarily focused on the needs of origin servers, since there are generally many more
-instances of origin servers than there are unique client deployments. It is also primarily focused
-on the Web browsing use case; however, much of the advice here is applicable to non-browsing uses
-as well.
-
-Note that the advice here is specific to when it was written; changes in underlying protocols, deployment practices, and HTTP itself may obsolete it at any time. As such, it is not intended to be
-long-lived, but instead to aid initial deployment of the new protocol.
+This document gives advice about how to configure lower-layer protocols and how to use HTTP/2's in-built mechanisms effectively. It is primarily focused on server configuration.
 
 # TCP Configuration
 
