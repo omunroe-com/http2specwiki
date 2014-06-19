@@ -1,6 +1,6 @@
 This document gives advice about how to configure lower-layer protocols and how to use HTTP/2's in-built mechanisms effectively. It is primarily focused on server configuration.
 
-# TCP Configuration
+## TCP Configuration
 
 HTTP/2 has been designed to use a single TCP connection, whereas current practice for HTTP/1 is to
 use multiple connections to achieve parallelism (generally, between four and eight).
@@ -28,7 +28,7 @@ Key recommendations:
  * HTTP/2 servers SHOULD adopt an initcwnd of 10, as per RFC6928.
 
 
-# TLS Configuration
+## TLS Configuration
 
 Beyond the typical performance and operational considerations of deploying TLS (RFC5246), a
 concern specific to HTTP/2 is the TLS record size; because HTTP/2 is a multiplexed protocol, a
@@ -44,7 +44,7 @@ Key recommendations:
  * HTTP/2 servers SHOULD use a small TLS record size; ideally, small enough that a record fits completely in a single packet.
 
 
-# Load Balancing and Failover 
+## Load Balancing and Failover 
 
 It's common to use multiple servers to server a single HTTP origin, in order to provide a scalable
 and reliable service. DNS is also commonly used to direct clients to the best (by some metric)
@@ -71,18 +71,18 @@ changing the resource's URL. This can be used for load balancing (both local and
 as controlled failover of services.
 
 
-# Use of HPACK
+## Use of HPACK
 
 TBD
 
-# Use of Flow Control
+## Use of Flow Control
 
 TBD
 
-# Use of Prioritisation
+## Use of Prioritisation
 
 TBD
 
-# Use of Server Push
+## Use of Server Push
 
 TBD
