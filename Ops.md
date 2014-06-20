@@ -99,7 +99,7 @@ TBD
 
 **Use a single connection** - it’s better for HTTP/2 performance and for the internet to use as few connections as possible. For HTTP/2, this will result in better packing of data into packets, better header compression, less connection state, fewer handshakes, etc. It improves TCP behavior across the internet and reduces bufferbloat. Interacts better with NATs as well as it requires less state.
 
-**Don’t shard hostnames** - This is a hack used by web apps to work around browser parallelism limits. For all the reasons that we suggest using a single connection, hostname sharding is suboptimal when you can use SPDY instead. Furthermore, hostname sharding requires extra DNS queries and complicates web apps due to using multiple origins.
+**Don’t shard hostnames** - This is a hack used by web apps to work around browser parallelism limits. For all the reasons that we suggest using a single connection, hostname sharding is suboptimal when you can use HTTP/2 instead. Furthermore, hostname sharding requires extra DNS queries and complicates web apps due to using multiple origins.
 
 **Use server push instead of inlining** - This is a hack used by web apps to reduce RTTs. Inlining reduces the cacheability of web pages and may increase web page sizes due to base64 encoding. Instead, the server can just push the content.
 
