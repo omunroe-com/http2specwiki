@@ -78,23 +78,6 @@ Additionally, the ALTSVC frame allows a server to redirect traffic to another lo
 changing the resource's URL. This can be used for load balancing (both local and global), as well
 as controlled failover of services.
 
-
-## Use of HPACK
-
-TBD
-
-## Use of Flow Control
-
-TBD
-
-## Use of Prioritisation
-
-TBD
-
-## Use of Server Push
-
-TBD
-
 ## Application-Specific
 
 **Use a single connection** - it’s better for HTTP/2 performance and for the internet to use as few connections as possible. For HTTP/2, this will result in better packing of data into packets, better header compression, less connection state, fewer handshakes, etc. It improves TCP behavior across the internet and reduces bufferbloat. Interacts better with NATs as well as it requires less state.
