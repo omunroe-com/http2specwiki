@@ -11,7 +11,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Akamai Ghost](Akamaighost) | C++ | intermediary | NPN | draft-12
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | draft-12
 [Hasan's GFE](Hasansgfe) | C++ | intermediary | ALPN, NPN | draft-12
-[Twitter](https://twitter.com/) | Java | server, client | NPN | draft-12
+[Twitter](https://twitter.com/) | Java | server, client | NPN | **draft-13**
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Direct, Upgrade | draft-12
 [Ericsson MSP](EricssonMPS) | | proxy | NPN, Upgrade, direct | draft-06
 [http2-go](https://github.com/Jxck/http2) | golang | client, server | npn | draft-10
