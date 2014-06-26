@@ -138,9 +138,9 @@ _This user story's requirements could be met by browsers, browser extensions, or
 
 Ulrich is keeping up a collection of proxy servers to help internet users in Elbonia bypass internet censorship in their country. The proxies are set up in jurisdictions outside the censorship regime and control of Elbonian authorities. To thwart deep packet inspection, all connections between the clients and the proxy look to an on-the-wire observer like opaque TLS-encrypted HTTP connections with no discernible features to detect proxy usage. To save network traffic and reduce possibility of detection, the proxies only serve resources that are actually banned, the rest to be retrieved directly by the clients. To this end, proxy auto-configuration scripts are provided for the clients allowing selective proxy usage. "HTTPS" PAC directive could be used as currently implemented by Chrome.
 
-## Vanessa
+## Vicky's School and Library Internet Access
 
-... was a duplicate of Ian; feel free to re-use the name.
+Vicky is a student who brings her own device to use the Internet at school and when she visits the library.  The library and school are required by law to filter inappropriate content in order to receive funds that support Internet access and are required to certify that they have these filters in place.  In order to continue to be able to provide Vicky with Internet access, schools and libraries need to be able to see either the URLs or the DNS requests for those URLs.  
 
 ## Wallace's network traffic flow 
 
