@@ -145,3 +145,7 @@ Ulrich is keeping up a collection of proxy servers to help internet users in Elb
 ## Wallace's network traffic flow 
 
 Wallace works for the same mobile network as Darlene (above). Wallace must ensure that the radio towers do not get so congested that data cannot be delivered, or is delivered with an unacceptable latency. Therefore Wallace has configured the radio towers to detect the data content type to distinguish Web browsing, email, VoIP call, video call, streaming video, online gaming messages, chat, etc.. These content types have distinct needs regarding latency and bandwidth, and are queued accordingly and without discrimination to customers or content providers. Wallace utilises a proxy to read the ports and headers which indicate a particular content type.
+
+## Xavier’s Data Saving App
+
+Xavier has a smartphone and subscribes to a data plan that charges him whenever he goes over a limit. Due to his increasing use of apps and videos, he is finding that his monthly data usage bill is constantly increasing. So, Xavier has found an application in the app store that reduces his data usage, as well as providing him a tool to view and manage his data usage. This allows Xavier to use his apps more, view more videos and even find out which apps are using most of his data plan. 
