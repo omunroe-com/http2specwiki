@@ -149,3 +149,7 @@ Wallace works for the same mobile network as Darlene (above). Wallace must ensur
 ## Xavier’s Data Saving App
 
 Xavier has a smartphone and subscribes to a data plan that charges him whenever he goes over a limit. Due to his increasing use of apps and videos, he is finding that his monthly data usage bill is constantly increasing. So, Xavier has found an application in the app store that reduces his data usage, as well as providing him a tool to view and manage his data usage. This allows Xavier to use his apps more, view more videos and even find out which apps are using most of his data plan. 
+
+## Yani’s Pinned Certificate
+
+Yani is a content provider. She would like to prevent MITM proxies from decrypting the content she serves to her users. She uses a pinned certificate to achieve this but web browsers do not enforce pinned certificates today. Web browsers do not enforce pinned certificates because it would mean those browsers would essentially prevent access to pinned certificate sites from within networks with MITM proxies.
