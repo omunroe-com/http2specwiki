@@ -53,6 +53,7 @@ When sending CONTINUATION, the previous HEADER-bearing frame MUST be "full".
 
 ### Cons
 * Disallows flushing partial headers before forwarding a request, increasing buffering requirements in some scenarios.
+* "Full" needs to be defined relative to how HPACK works, because a strict interpretation will force HPACK output to span frames, reintroducing the state-full-ness which removing the reference set was supposed to eliminate.
 
 ## Require :-headers to be first
 Require "routing" meta-headers to be serialised first (requires dropping reference set).
