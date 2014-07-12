@@ -38,6 +38,8 @@ The 256 number is a back-of-the-envelope number PHK came up with, the thinking i
 ## Interleave HEADER-bearing frames
 Allow frames bearing headers to be interleaved without blocking other frames.
 
+This point is only relevant for CONTINUATION, with the Greg et al proposal, the full header-set is in a single frame.
+
 ### Pros
 * Addresses #550; other streams can progress during transmission of a large header block.
 
