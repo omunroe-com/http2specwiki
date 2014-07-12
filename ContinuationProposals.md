@@ -9,10 +9,12 @@ Remove CONTINUATION completely from the specification, as per #548.
 ### Pros
 
 * Headers are sent in one frame, which means that multiplexing can still happen (as long as max frame size limit is appropriate to connection). Addresses #550.
+* No more need to parse CONTINUATION frames to keep the header table in sync after too large a request
 
 ### Cons
 * Imposes a hard limit on header blocks; if not sufficiently large, interop with HTTP/1 suffers.
 * When headers are too big, error states may be problematic in proxies, existing HTTP APIs.
+  [willy] proxies already have to deal with too large headers (h1 and h2), so this does not add extra difficulties.
 
 
 ## Limit header block size via a SETTING
@@ -23,7 +25,9 @@ Also proposed in #548, a recipient can send a setting that indicates how large a
 
 ### Cons
 * Gives information to attackers about how to maximally impact whilst staying within limits.
+  [willy] that's already the case in h1 where implementation limits are well-known
 * When headers are too big, error states may be problematic in proxies, existing HTTP APIs.
+  [willy] same as above, already needed and handled anyway
 
 
 ## Interleave HEADER-bearing frames
@@ -53,3 +57,4 @@ Require "routing" meta-headers to be serialised first (requires dropping referen
 
 ### Cons
 * ???
+* may depend on getting rid of the HPACK reference set ?
