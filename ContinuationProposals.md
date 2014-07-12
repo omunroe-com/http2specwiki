@@ -30,6 +30,11 @@ Also proposed in #548, a recipient can send a setting that indicates how large a
   [willy] same as above, already needed and handled anyway
 
 
+### Notes
+
+The 256 number is a back-of-the-envelope number PHK came up with, the thinking is the following:  It should always be possible to send "GET /robots.txt" and "Get /" and it should be possible to return a "deny all" and 3xx redirect respectively.  Mandating that all HTTP/2 implementations never limit the size lower than 256 ensures this very basic level of interop.  (But I'll appreciate if somebody else will redo the math using their own assumptions about FQDN lengths etc.)
+
+
 ## Interleave HEADER-bearing frames
 Allow frames bearing headers to be interleaved without blocking other frames.
 
