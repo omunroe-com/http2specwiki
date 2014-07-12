@@ -60,7 +60,8 @@ Require "routing" meta-headers to be serialised first (requires dropping referen
 
 ### Pros
 * Makes policy decisions easier in *some* cases, partially addressing #551.
+* Retains HTTP/1 semantics which a lot of implementations rely on, directly or indirectly.
 
 ### Cons
 * ???
-* may depend on getting rid of the HPACK reference set ?
+* may depend on getting rid of the HPACK reference set ?  (I don't think so, why would that be ? /phk)
