@@ -66,4 +66,4 @@ Require "routing" meta-headers to be serialised first (requires dropping referen
 
 ### Cons
 * ???
-* may depend on getting rid of the HPACK reference set ?  (I don't think so, why would that be ? /phk)
+* may depend on getting rid of the HPACK reference set ?  (I don't think so, why would that be ? /phk) [wt: because if any :-header is in the refset, it will automatically be sent after indexed headers /wt]
