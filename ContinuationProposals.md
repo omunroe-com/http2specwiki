@@ -153,6 +153,23 @@ Remove the CONTINATION frame and allow HEADERS to be fragmented in the same way 
   * could be an opcode which changes how the reference set is emitted
   * could be turning off everything in the reference set (as one would/could do it today)
 
+## Change the state machine to allow for INCOMPLETE_HEADER FRAME
+
+Some of the reaction to CONTINUATION appears to be that handling of that frame differs in terms of flags.
+Solve this by always having HEADERS have the flags which indicate END_STREAM, etc. This implies that HEADERS would be the last frame in the sequence of frames which represents a set of headers.
+
+When an implementation is sending a set of headers, it may send a sequence of any number of non-empty INCOMPLETE_HEADERS_FRAMES, followed by a HEADERS frame. Flags on INCOMPLETE_HEADERS_FRAMES shall always be zero. The receipt of a HEADERS frame implies that the set of headers has been fully received once its payload has been interpreted.
+
+### Pros
+* Addresses uglyness complaints
+* Allows for the removal of the END_HEADERS flag.
+
+### Cons
+* It is a change
+
+### Requirements
+* None if other protocol semantics remain unchanged.
+
 ## Summary of ideas (and their requirements) in this area:
   * header fragmentation vs non-fragmentation
   * limiting compressed header size for a single header set
@@ -161,4 +178,5 @@ Remove the CONTINATION frame and allow HEADERS to be fragmented in the same way 
     * requires fragmentation (the inverse is not true-- fragmentation does not require interleaving)
   * eliminating stateful opcodes which cross frame boundaries
   * using END_SEGMENT instead of END_HEADERS to signal end of a set of headers
+  * Send INCOMPLETE_HEADER_FRAME* HEADER_FRAME
 
