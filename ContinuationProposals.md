@@ -51,7 +51,7 @@ Also proposed in #548, a recipient can send a setting that indicates how large a
 ### Requirements:
 * SETTINGS ID for max-compressed header size
 * Implementations must buffer at least the last opcode
-* Implementations must 'rewind' the compressor state, or magic accurate predictions of compressed size.
+* Implementations must 'rewind' the compressor state, or make (magically) accurate predictions of compressed size.
 
 ### Notes
 
