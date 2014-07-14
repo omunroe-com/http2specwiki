@@ -44,7 +44,7 @@ This point is only relevant for CONTINUATION, with the Greg et al proposal, the 
 * Addresses #550; other streams can progress during transmission of a large header block.
 
 ### Cons
-* Allows a DoS whereby an attacker opens a large number of streams with partial headers; the recipient often (but not always) needs to buffer each stream's headers, incurring a large cost in memory.
+* Allows a DoS whereby an attacker opens a large number of streams with partial headers; the recipient often (but not always) needs to buffer each stream's headers, incurring a large cost in memory. [Can it be explained why this is any different to CONTINUATIONs without interleaving?]
 
 
 ## Require CONTINUATION frames to follow "full" ones
