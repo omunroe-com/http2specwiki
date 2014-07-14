@@ -115,8 +115,7 @@ Require "routing" meta-headers to be serialised first (requires dropping referen
 * must refer to the ':' headers first (duh...)
   * today this would imply HEADERS frames start with either one or two opcodes per ':' header, or implies a new opcode type or a different frame...
 
-## Fragment HEADERS in the same way as DATA frames
-[Roberto] I'd restate this as: Remove CONTINUATION frames, and repurpose the END_SEGMENT flag to mean the end of a set of headers.
+## Remove CONTINUATIONS, Fragment HEADERS using END_SEGMENT flag.
 
 Remove the CONTINATION frame and allow HEADERS to be fragmented in the same way that DATA frames are:
 * Remove the continuation frames. 
@@ -131,22 +130,18 @@ Remove the CONTINATION frame and allow HEADERS to be fragmented in the same way 
 ### Pros
 * Addresses 550 by allowing headers to be fragmented and interleaved.
 * Addresses 551. Since limit is not related to framing, the max header size can be expressed as uncompressed header size.
-* Addresses the "uglyness" and complexity concerns raised by not represented as issues. 
+* Addresses "uglyness" concerns about how to handle the flags on HEADERS/CONTINUATIONS. 
 * Allows for infinite streaming headers
-* can work with ":- first" proposal
-  * [roberto] This is true even when one uses CONTINUATIONs, or when one is required to send HEADERS in one frame, so this seems to not really be a pro for this proposal.
 
-[roberto] I'd restate the pros as:
-* Addresses "uglyness" concerns about how to handle the flags on HEADERS/CONTINUATIONS.
 
 ### Cons
-* Depends on removing HPACK reference set to allow interleaving of HEADERS frames
-  * [roberto] interleaving and fragmentation are related, since interleaving requires fragmentation, however they are orthogonal-- one can have fragmentation without interleaving. The requirement here is to be able to not emit from the reference set, or to force the clearing of the reference set.
 * Presents same DoS attack surface as CONTINUATIONS
   * [roberto] Which refers to having to parse the continuation frame, and would be weaker than many of the other ways to attack the protocol: one-byte data payloads, settings sent often, PING sent often, etc. etc.
 * Mixes the concept of the end of a segment and the concept of the end of the current set of headers
+  * [gregw] Why are these concepts different? end-segment flag signals represents a semantic boundary within the content. Isn't that what end of headers is?
 
 ### Requirements
+* If HEADERS fragments are interleaved, then HPACK must be changed to allow interleaving (see efficiency below).
 * Intermediaries/servers/senders must place a different semantic understanding on empty header-sets and non-empty header-sets, since empty-header-sets are now indications of differnt things.
 * If efficiency is a concern, a way of disabling the emission from the reference set must be utilized
   * could be removing the reference set
