@@ -69,7 +69,8 @@ This point is only relevant for designs where headers can be fragmented across m
 
 ### Cons
 * Increases the DoS surface area multiplicatively by max_concurrency size:
-  * Allows a DoS whereby an attacker opens a large number of streams with partial headers; the recipient often (but not always) needs to buffer each stream's headers, incurring a large cost in memory. [Can it be explained why this is any different to CONTINUATIONs without interleaving?]
+  * Allows a DoS whereby an attacker opens a large number of streams with partial headers; the recipient often (but not always) needs to buffer each stream's headers, incurring a large cost in memory. 
+    * [roberto] This is different from doing fragmentation without interleaving because in the fragmenting without interleaving case, the max DoS exposure is one incomplete set of headers, instead of max_concurrency sets of incomplete headers.
 * Requires non-state modifying and non-dynamic-state referring compression.
 
 ### Requirements
