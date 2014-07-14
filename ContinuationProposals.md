@@ -74,7 +74,8 @@ This point is only relevant for designs where headers can be fragmented across m
 * Requires non-state modifying and non-dynamic-state referring compression.
 
 ### Requirements
-* Implementations which wish to reliably interpret headers must buffer incomplete headers.
+* Implementations which wish to reliably interpret complete header sets must buffer incomplete headers.
+  * If compressed header length is required, this requirement changes to *All* implementations must buffer incomplete headers before forwarding.
 * No state-referring or state-modifying opcode may span non-contiguous frames
   * practically, this means no state-referring or state-modifying opcode may span any frames.
   * This ends up implying 'rewinding' of the compression state if/when an opcode ends up being larger than the max permissible frame size.
