@@ -82,11 +82,11 @@ Remove the CONTINATION frame and allow HEADERS to be fragmented in the same way 
 * Optionally rename HEADERS to META_DATA to avoid the sending the trailers in a headers frame confusion
 
 ### Pros
-* Addresses both 550 and 551
+* Addresses 550 by allowing headers to be fragmented and interleaved.
+* Addresses 551. Since limit is not related to framing, the max header size can be expressed as uncompressed header size.
 * Addresses the "uglyness" and complexity concerns raised by not represented as issues. 
 * Allows for infinite streaming headers
 * can work with ":- first" proposal
-* is a meta proposal for "Interleave HEADER-bearing frames"
 
 ### Cons
 * Depends on removing HPACK reference set to allow interleaving of HEADERS frames
