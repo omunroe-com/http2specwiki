@@ -10,12 +10,12 @@ Remove CONTINUATION completely from the specification, as per #548.
 
 * Headers are sent in one frame, which means that multiplexing can still happen (as long as max frame size limit is appropriate to connection). Addresses #550.
 * No more need to parse CONTINUATION frames to keep the header table in sync after too large a request
-  * [roberto] the above is not true-- removing continuations does not change the requirement to parse any/all header data sent, since failing to interpret header data (even if just throwing it out) results in state desynch.
+  * [roberto] the above is not true-- removing continuations does not change the requirement to parse any/all header data sent, since failing to interpret header data (even if just throwing it out) results in state desynch of the compressor. I believe this is conflating the idea of a max-compressed-header size with the idea of continuations, which are orthogonal: One can have continuations while also having a max-compressed-header size.
 
 ### Cons
 * Imposes a hard limit on header blocks; if not sufficiently large, interop with HTTP/1 suffers.
 * When headers are too big, error states may be problematic in proxies, existing HTTP APIs.
-  [willy] proxies already have to deal with too large headers (h1 and h2), so this does not add extra difficulties.
+  * [willy] proxies already have to deal with too large headers (h1 and h2), so this does not add extra difficulties.
 * Requires knowing size of outbound headers before sending
   * which implies all of the headers must be buffered before transmission
   * which disallows implementation choice to trade possible HoL blocking for reduction in state commitment.
@@ -30,10 +30,10 @@ Also proposed in #548, a recipient can send a setting that indicates how large a
 
 ### Cons
 * Gives information to attackers about how to maximally impact whilst staying within limits.
-  [willy] that's already the case in h1 where implementation limits are well-known
-  [roberto] that is a big IF. Many servers compute these dynamically.
+  * [willy] that's already the case in h1 where implementation limits are well-known
+  * [roberto] that is a big IF. Many servers compute these dynamically.
 * When headers are too big, error states may be problematic in proxies, existing HTTP APIs.
-  [willy] same as above, already needed and handled anyway
+  * [willy] same as above, already needed and handled anyway
 
 
 ### Notes
@@ -76,7 +76,9 @@ Require "routing" meta-headers to be serialised first (requires dropping referen
 
 ### Cons
 * ???
-* may depend on getting rid of the HPACK reference set ?  (I don't think so, why would that be ? /phk) [wt: because if any :-header is in the refset, it will automatically be sent after indexed headers /wt]
+* may depend on getting rid of the HPACK reference set ?
+  * [phk] I don't think so, why would that be ?
+    * [wt] because if any :-header is in the refset, it will automatically be sent after indexed headers
   * [roberto] It doesn't require getting rid of the reference set-- it would only require indexed opcodes to be sent to refer to these at the beginning of the frame. Sometimes it would require two opcodes, though this could be 'fixed' by treating ':' differently in the compressor, and with other approaches.
 
 
