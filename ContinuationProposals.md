@@ -67,3 +67,27 @@ Require "routing" meta-headers to be serialised first (requires dropping referen
 ### Cons
 * ???
 * may depend on getting rid of the HPACK reference set ?  (I don't think so, why would that be ? /phk) [wt: because if any :-header is in the refset, it will automatically be sent after indexed headers /wt]
+
+
+## Fragment HEADERS in the same way as DATA frames
+
+Remove the CONTINATION frame and allow HEADERS to be fragmented in the same way that DATA frames are:
+* Remove the continuation frames. 
+* Remove the END_HEADERS flag from the HEADERS frame.  Instead use the END_SEGMENT flag to indicate the end of a header block.
+* END_STREAM flag semantics are the same as they are for DATA frames.
+* Remove priority fields from the HEADERS frame, as these can be sent in a separate PRIORITY frame without concerns of fragmentation.
+* Deduct the HEADER frame sizes from the flow control window sizes, but do not block header frames due to flow control. 
+* If it is desired to declare a maximum header size (for 551), then add a SETTINGS_MAX_HEADER_SIZE expressed in uncompressed bytes
+* Remove the header block fragment from the PUSH_PROMISE frame. Instead send the headers in a HEADERS+ frame sequence following the PUSH_PROMISE frame.
+* Optionally rename HEADERS to META_DATA to avoid the sending the trailers in a headers frame confusion
+
+### Pros
+* Addresses both 550 and 551
+* Addresses the "uglyness" and complexity concerns raised by not represented as issues. 
+* Allows for infinite streaming headers
+* can work with ":- first" proposal
+* is a meta proposal for "Interleave HEADER-bearing frames"
+
+### Cons
+* Depends on removing HPACK reference set to allow interleaving of HEADERS frames
+* Presents same DoS attack surface as CONTINUATIONS
