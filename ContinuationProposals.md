@@ -135,9 +135,7 @@ Remove the CONTINATION frame and fragment HEADERS in the same way that DATA fram
 ### Cons
 * Presents same DoS attack surface as CONTINUATIONS
   * [roberto] Which refers to having to parse the continuation frame, and would be weaker than many of the other ways to attack the protocol: one-byte data payloads, settings sent often, PING sent often, etc. etc.
-* Mixes the concept of the end of a segment and the concept of the end of the current set of headers
-  * [gregw] Why are these concepts different? end-segment flag signals represents a semantic boundary within the content. Isn't that what end of headers is?
-    * [roberto] Not necessarily-- non HTTP protocols may send messages which may consist of (metadata* data*)*. For such uses, using END_SEGMENT for END_HEADERS conflates end-of-message with end-of-headers, and would require signaling end-of-message with some other mechanism.
+
 
 ### Requirements
 * If HEADERS fragments are interleaved, then HPACK must be changed to allow interleaving (see efficiency below).
