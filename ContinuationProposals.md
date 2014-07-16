@@ -71,6 +71,7 @@ This point is only relevant for designs where headers can be fragmented across m
 * Increases the DoS surface area multiplicatively by max_concurrency size:
   * Allows a DoS whereby an attacker opens a large number of streams with partial headers; the recipient often (but not always) needs to buffer each stream's headers, incurring a large cost in memory. 
     * [roberto] This is different from doing fragmentation without interleaving because in the fragmenting without interleaving case, the max DoS exposure is one incomplete set of headers, instead of max_concurrency sets of incomplete headers.
+    * [gregw] I don't see this as substantially different from existing DoS exposure.  A request can be sent with content-length:1 and then that content never sent.  A server still needs to buffer the headers while waiting for the content and in many applications has a thread allocated to handle the request.
 * Requires non-state modifying and non-dynamic-state referring compression.
 
 ### Requirements
