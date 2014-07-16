@@ -82,6 +82,37 @@ This point is only relevant for designs where headers can be fragmented across m
   * This ends up implying 'rewinding' of the compression state if/when an opcode ends up being larger than the max permissible frame size.
 
 
+## Remove CONTINUATIONS, Fragment HEADERS.
+[gregw] This may be the same as " Interleave HEADER-bearing frames" proposal above, but just expressed differently?
+
+Remove the CONTINUATION frame and fragment HEADERS in the similar way that DATA frames are:
+* Remove the CONTINUATION frames. 
+* Remove priority fields from the HEADERS frame, as these can be sent in a separate PRIORITY frame without concerns of fragmentation.
+* Deduct the HEADER frame sizes from the flow control window sizes, but do not block header frames due to flow control. 
+* If it is desired to declare a maximum header size (for 551), then add a SETTINGS_MAX_HEADER_SIZE expressed in uncompressed bytes
+* Remove the header block fragment from the PUSH_PROMISE frame. Instead send the headers in a HEADERS+ frame sequence following the PUSH_PROMISE frame.
+
+### Pros
+* Addresses 550 by allowing headers to be fragmented and interleaved.
+* Addresses 551. Since limit is not related to framing, the max header size can be expressed as uncompressed header size.
+* Addresses "uglyness" concerns about how to handle the flags on HEADERS/CONTINUATIONS. 
+* Allows for infinite streaming headers
+
+### Cons
+* Presents same DoS attack surface as CONTINUATIONS
+  * [roberto] Which refers to having to parse the continuation frame, and would be weaker than many of the other ways to attack the protocol: one-byte data payloads, settings sent often, PING sent often, etc. etc.
+
+### Requirements
+* If HEADERS fragments are interleaved, then HPACK must be changed to allow interleaving (see efficiency below).
+* Intermediaries/servers/senders must place a different semantic understanding on empty header-sets and non-empty header-sets, since empty-header-sets are now indications of differnt things.
+    * [gregw] I don't understand this requirement?
+* If efficiency is a concern, a way of disabling the emission from the reference set must be utilized
+  * could be removing the reference set
+  * could be an opcode which changes how the reference set is emitted
+  * could be turning off everything in the reference set (as one would/could do it today)
+
+
+
 ## Require CONTINUATION frames to follow "full" ones
 When sending CONTINUATION, the previous HEADER-bearing frame MUST be "full". 
 
@@ -115,36 +146,6 @@ Require "routing" meta-headers to be serialised first (requires dropping referen
 ### Requirements
 * must refer to the ':' headers first (duh...)
   * today this would imply HEADERS frames start with either one or two opcodes per ':' header, or implies a new opcode type or a different frame...
-
-## Remove CONTINUATIONS, Fragment HEADERS.
-
-Remove the CONTINATION frame and fragment HEADERS in the same way that DATA frames are:
-* Remove the continuation frames. 
-* Remove priority fields from the HEADERS frame, as these can be sent in a separate PRIORITY frame without concerns of fragmentation.
-* Deduct the HEADER frame sizes from the flow control window sizes, but do not block header frames due to flow control. 
-* If it is desired to declare a maximum header size (for 551), then add a SETTINGS_MAX_HEADER_SIZE expressed in uncompressed bytes
-* Remove the header block fragment from the PUSH_PROMISE frame. Instead send the headers in a HEADERS+ frame sequence following the PUSH_PROMISE frame.
-
-### Pros
-* Addresses 550 by allowing headers to be fragmented and interleaved.
-* Addresses 551. Since limit is not related to framing, the max header size can be expressed as uncompressed header size.
-* Addresses "uglyness" concerns about how to handle the flags on HEADERS/CONTINUATIONS. 
-* Allows for infinite streaming headers
-
-
-### Cons
-* Presents same DoS attack surface as CONTINUATIONS
-  * [roberto] Which refers to having to parse the continuation frame, and would be weaker than many of the other ways to attack the protocol: one-byte data payloads, settings sent often, PING sent often, etc. etc.
-
-
-### Requirements
-* If HEADERS fragments are interleaved, then HPACK must be changed to allow interleaving (see efficiency below).
-* Intermediaries/servers/senders must place a different semantic understanding on empty header-sets and non-empty header-sets, since empty-header-sets are now indications of differnt things.
-    * [gregw] I don't understand this requirement?
-* If efficiency is a concern, a way of disabling the emission from the reference set must be utilized
-  * could be removing the reference set
-  * could be an opcode which changes how the reference set is emitted
-  * could be turning off everything in the reference set (as one would/could do it today)
 
 ## Change the state machine to allow for INCOMPLETE_HEADER FRAME
 
