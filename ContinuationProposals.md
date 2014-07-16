@@ -142,6 +142,7 @@ Remove the CONTINATION frame and fragment HEADERS in the same way that DATA fram
 ### Requirements
 * If HEADERS fragments are interleaved, then HPACK must be changed to allow interleaving (see efficiency below).
 * Intermediaries/servers/senders must place a different semantic understanding on empty header-sets and non-empty header-sets, since empty-header-sets are now indications of differnt things.
+    * [gregw] I don't understand this requirement?
 * If efficiency is a concern, a way of disabling the emission from the reference set must be utilized
   * could be removing the reference set
   * could be an opcode which changes how the reference set is emitted
