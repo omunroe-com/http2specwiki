@@ -2,7 +2,6 @@ This page tracks the pros and cons of proposals to address CONTINUATION/header b
 
 Note that it's very possible we end up using more than one of these; however, they're listed separately so that their individual attributes can be explored.
 
-
 ## Drop CONTINUATION
 Remove CONTINUATION completely from the specification, as per #548.
 
@@ -28,6 +27,29 @@ Remove CONTINUATION completely from the specification, as per #548.
 * must buffer the entire compressed headers before emitting any data
 * must not send compressed headers which exceed max header-frame size.
 * must maintain max header-frame size, as per the next section.
+
+
+## Option Z
+ * Remove CONTINUATION
+ * No frame size limit on HEADERS/PUSH_PROMISE
+   * i.e. "unlimited headers" up to 2^24-1
+ * SETTINGS_MAX_UNCOMPRESSED_HEADER_BLOCK_SIZE_ADVISORY
+   * i.e. Advisory setting for uncompressed limit a peer is willing to receive (but might not imply PROTOCOL_ERROR or STREAM_ERROR on receipt)
+   * NOTE: The advisory can be dropped from option Z if the WG decides it's not useful
+
+### Pros
+ * No need for complex compression state rewind
+ * Headers are sent in one frame (simpler yet logically equivalent to h2-13 HEADER+CONTINUATION* which are treated as one continuous frame)
+   * Given N bytes of payload in the HEADERS frame, HoL blocking exists for the amount of time it takes to send those N bytes (again, equivalent to HoL blocking in h2-13 HEADER+CONTINUATION*).
+ * Advisory allows sender to potentially decide before transmission if (uncompressed) header block will be rejected
+
+### Cons
+ * No fragmentation of a header block (i.e. sender must buffer header block)
+ * The (optional) advisory could announce DoS limits to adversaries
+
+### Requirements on implementations
+* must buffer the entire compressed headers before emitting any data
+
 
 ## Limit header block size via a SETTING
 Also proposed in #548, a recipient can send a setting that indicates how large a header block it's willing to receive; the most commonly discussed default is 16K and minimum is 256 octets, although both need more discussion.
@@ -173,4 +195,3 @@ When an implementation is sending a set of headers, it may send a sequence of an
   * eliminating stateful opcodes which cross frame boundaries
   * using END_SEGMENT instead of END_HEADERS to signal end of a set of headers
   * Send INCOMPLETE_HEADER_FRAME* HEADER_FRAME
-
