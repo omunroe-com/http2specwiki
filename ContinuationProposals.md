@@ -194,7 +194,7 @@ When there is a compressed limit clients have the following options:
   * This requires no additional computational overhead but does prevent a client from consuming the complete frame size. On the other hand, this is likely still capable of handling 99.8% of known header sizes.
 * Snapshot the state when the uncompressed header content > the compressed limit, and roll it back when the compressed limit is exceeded. 
   * This requires a temporary working space up to the total size of the header table.
-* Reset the header table in the next request.
+* Reset the header table in the next request when uncompressed header content > compressed limit.
   * This can be done using 2 encoding context update opcodes (table size = 0, table size = old)
 
 ## Summary of ideas (and their requirements) in this area:
