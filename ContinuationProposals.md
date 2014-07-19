@@ -186,6 +186,17 @@ When an implementation is sending a set of headers, it may send a sequence of an
 ### Requirements
 * None if other protocol semantics remain unchanged.
 
+## Dealing with compressed limits
+
+When there is a compressed limit clients have the following options:
+
+* Treat the compressed limit as an uncompressed limit. 
+  * This requires no additional computational overhead but does prevent a client from consuming the complete frame size. On the other hand, this is likely still capable of handling 99.8% of known header sizes.
+* Snapshot the state when the uncompressed header content > the compressed limit, and roll it back when the compressed limit is exceeded. 
+  * This requires a temporary working space up to the total size of the header table.
+* Reset the header table in the next request.
+  * This can be done using 2 encoding context update opcodes (table size = 0, table size = old)
+
 ## Summary of ideas (and their requirements) in this area:
   * header fragmentation vs non-fragmentation
   * limiting compressed header size for a single header set
