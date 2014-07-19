@@ -12,7 +12,7 @@ Remove CONTINUATION completely from the specification, as per #548.
     * If there are 1000 bytes of payload, the HoL blocking exists for the amount of time it takes to send those 1000 bytes of payload.
     * The use (or lack of use) of CONTINUATION frames doesn't change this: One can achieve all of the same properties by having an implementation initiate the sending of HEADER (followed by CONTINUATION) when it knows it will have all of the headers to send, and will not stall.
 * No more need to parse CONTINUATION frames to keep the header table in sync after too large a request
-  * [roberto] the above is not true-- removing continuations does not change the requirement to parse any/all header data sent, since failing to interpret header data (even if just throwing it out) results in state desynch of the compressor. I believe this is conflating the idea of a max-compressed-header size with the idea of continuations, which are orthogonal: One can have continuations while also having a max-compressed-header size.
+  * [roberto] the above is not true-- removing continuations does not change the requirement to parse any/all header data sent, since failing to interpret header data (even if just throwing it out) results in state desynch of the compressor. I believe this is conflating the idea of a max-compressed-header size with the idea of continuations, which are orthogonal: One can have continuations while also having a max-compressed-header size. 
 
 ### Cons
 * Imposes a hard limit on header blocks; if not sufficiently large, interop with HTTP/1 suffers.
@@ -22,6 +22,7 @@ Remove CONTINUATION completely from the specification, as per #548.
   * which implies all of the headers must be buffered before transmission
   * which disallows implementation choice to trade possible HoL blocking for reduction in state commitment.
   * and implies an unavoidable addition to latency proportional to header_size/bandwidth
+* Non-deterministic. The fact that request A precedes B changes the ability of B to be transmitted in cases where the transmission of A now allows B to fit within the max frame size.
 
 ### Requirements on implementations
 * must buffer the entire compressed headers before emitting any data
@@ -42,10 +43,15 @@ Remove CONTINUATION completely from the specification, as per #548.
  * Headers are sent in one frame (simpler yet logically equivalent to h2-13 HEADER+CONTINUATION* which are treated as one continuous frame)
    * Given N bytes of payload in the HEADERS frame, HoL blocking exists for the amount of time it takes to send those N bytes (again, equivalent to HoL blocking in h2-13 HEADER+CONTINUATION*).
  * Advisory allows sender to potentially decide before transmission if (uncompressed) header block will be rejected
+ * Deterministic. The fact that request A precedes B does not change the ability of B to be transmitted.
 
 ### Cons
  * No fragmentation of a header block (i.e. sender must buffer header block)
  * The (optional) advisory could announce DoS limits to adversaries
+* Requires knowing size of outbound headers before sending
+  * which implies all of the headers must be buffered before transmission
+  * which disallows implementation choice to trade possible HoL blocking for reduction in state commitment.
+  * and implies an unavoidable addition to latency proportional to header_size/bandwidth
 
 ### Requirements on implementations
 * must buffer the entire compressed headers before emitting any data
@@ -69,6 +75,7 @@ Also proposed in #548, a recipient can send a setting that indicates how large a
   * One must still detect when the sender is zip-bombing and attempting to cause receivers to allocate large amounts of memory for uncompressed data. This is the larger DoS surface area.
 * Requires the 'rewinding' of compression state (or accurate prediction of when this would happen, which would be magic) when, after compression, an opcode will not fit into the max frame size
   * This implies much more complexity for the compression implementation.
+* Non-deterministic. The fact that request A precedes B changes the ability of B to be transmitted in cases where the transmission of A now allows B to fit within the max frame size.
 
 ### Requirements:
 * SETTINGS ID for max-compressed header size
@@ -119,6 +126,7 @@ Remove the CONTINUATION frame and fragment HEADERS in the similar way that DATA 
 * Addresses 551. Since limit is not related to framing, the max header size can be expressed as uncompressed header size.
 * Addresses "uglyness" concerns about how to handle the flags on HEADERS/CONTINUATIONS. 
 * Allows for infinite streaming headers
+* Deterministic.
 
 ### Cons
 * Presents same DoS attack surface as CONTINUATIONS
@@ -132,8 +140,6 @@ Remove the CONTINUATION frame and fragment HEADERS in the similar way that DATA 
   * could be removing the reference set
   * could be an opcode which changes how the reference set is emitted
   * could be turning off everything in the reference set (as one would/could do it today)
-
-
 
 ## Require CONTINUATION frames to follow "full" ones
 When sending CONTINUATION, the previous HEADER-bearing frame MUST be "full". 
@@ -169,7 +175,7 @@ Require "routing" meta-headers to be serialised first (requires dropping referen
 * must refer to the ':' headers first (duh...)
   * today this would imply HEADERS frames start with either one or two opcodes per ':' header, or implies a new opcode type or a different frame...
 
-## Change the state machine to allow for INCOMPLETE_HEADER FRAME
+## Change the state machine to allow for INCOMPLETE_HEADER FRAME; restates the CONTINUATION state machine in a more regular way.
 
 Some of the reaction to CONTINUATION appears to be that handling of that frame differs in terms of flags.
 Solve this by always having HEADERS have the flags which indicate END_STREAM, etc. This implies that HEADERS would be the last frame in the sequence of frames which represents a set of headers.
