@@ -42,19 +42,14 @@ Remove CONTINUATION completely from the specification, as per #548.
  * No need for complex compression state rewind
  * Headers are sent in one frame (simpler yet logically equivalent to h2-13 HEADER+CONTINUATION* which are treated as one continuous frame)
    * Given N bytes of payload in the HEADERS frame, HoL blocking exists for the amount of time it takes to send those N bytes (again, equivalent to HoL blocking in h2-13 HEADER+CONTINUATION*).
- * Advisory allows sender to potentially decide before transmission if (uncompressed) header block will be rejected
+ * Advisory allows sender to potentially decide before transmission if (uncompressed) header block will likely be rejected
  * Deterministic. The fact that request A precedes B does not change the ability of B to be transmitted.
 
 ### Cons
  * No fragmentation of a header block (i.e. sender must buffer header block)
  * The (optional) advisory could announce DoS limits to adversaries
-* Requires knowing size of outbound headers before sending
-  * which implies all of the headers must be buffered before transmission
-  * which disallows implementation choice to trade possible HoL blocking for reduction in state commitment.
-  * and implies an unavoidable addition to latency proportional to header_size/bandwidth
-
-### Requirements on implementations
-* must buffer the entire compressed headers before emitting any data
+  * Limit can easily be detected anyway, and it is only advisory and not a guarantee against 431 TOO MANY HEADERS or 420 ENHANCE YOUR CALM.
+ * Intermediaries cannot preemptively drop large header blocks without first decoding them, but such practice would not be recommended anyway.
 
 
 ## Limit header block size via a SETTING
