@@ -153,3 +153,16 @@ Xavier has a smartphone and subscribes to a data plan that charges him whenever 
 ## Yani’s Pinned Certificate
 
 Yani is a content provider. She would like to prevent MITM proxies from decrypting the content she serves to her users. She uses a pinned certificate to achieve this but web browsers do not enforce pinned certificates today. Web browsers do not enforce pinned certificates because it would mean those browsers would essentially prevent access to pinned certificate sites from within networks with MITM proxies.
+
+## My home is my castle
+
+In a family home there are quite a number of Internet connected devices sharing a common (W)LAN and Internet connection. With parents and kids having PCs, Laptops, Gameboys, Games Consoles, Smart TVs, Tablets, Blue Ray Players and more there could easily more than 20 devices. For many devices the vendor restricts what software can be installed. For safety and privacy reasons the home owners may want to prevent amongst others
+ - malware being downloaded
+ - use parental control
+ - prevent unwanted information being leaked
+ - prevent unwanted ads
+ - prevent phishing
+ - being informed when someone maliciously turn on microphones or cameras
+ - introduce proxies and or VPNs to increase privacy (hiding IP and other IDs)
+ - introduce proxies to allow access to geo fenced services
+This should be possible in a centralized way without manually configure all devices which may not even be possible for some of them.
