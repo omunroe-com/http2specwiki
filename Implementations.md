@@ -14,7 +14,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Twitter](https://twitter.com/) | Java | server, client | NPN | **draft-13**
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Direct, Upgrade | **draft-13**
 [Ericsson MSP](EricssonMPS) | | proxy | NPN, Upgrade, direct | draft-06
-[http2-go](https://github.com/Jxck/http2) | golang | client, server | npn | draft-10
+[http2-go](https://github.com/Jxck/http2) | golang | client, server | npn | draft-12
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | draft-12
 [mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client, server | ALPN, NPN, Direct | **draft-13**
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | NPN, direct | draft-06
