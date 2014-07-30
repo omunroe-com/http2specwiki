@@ -12,15 +12,15 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | draft-12
 [Test GFE](Hasansgfe) | C++ | intermediary | ALPN, NPN | **draft-13**
 [Twitter](https://twitter.com/) | Java | server, client | NPN | **draft-13**
-[Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Direct, Upgrade | **draft-13**
+[Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct | **draft-13**
 [Ericsson MSP](EricssonMPS) | | proxy | NPN, Upgrade, direct | draft-06
-[http2-go](https://github.com/Jxck/http2) | golang | client, server | npn | draft-12
+[http2-go](https://github.com/Jxck/http2) | golang | client, server | NPN | draft-12
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | draft-12
-[mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client, server | ALPN, NPN, Direct | **draft-13**
+[mruby-http2](https://github.com/matsumoto-r/mruby-http2) | C/mruby | client, server | ALPN, NPN, direct | **draft-13**
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | NPN, direct | draft-06
 [hyper](https://github.com/lukasa/hyper) | Python | client | NPN | draft-09
 [curl and libcurl](https://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | **draft-13**
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | **draft-13**
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN | draft-13
-[Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=jetty-http2) | Java | client, server | NPN, ALPN | draft-12
+[Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=jetty-http2) | Java | client, server | ALPN, NPN | draft-12
 [F5](F5)| C | server, proxy | ALPN, NPN | **draft-13**
