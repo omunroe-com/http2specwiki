@@ -5,6 +5,7 @@ Language | Library | Status | Notes
 C | [OpenSSL](http://www.openssl.org) | [in next release](http://git.openssl.org/gitweb/?p=openssl.git;a=blob;f=NEWS;h=fc466ae3cc1ee38b566516eafe913e32409798a4;hb=HEAD) | scheduled for 1.0.2
 C | [GnuTLS](http://www.gnutls.org/) | [released](http://gnutls.org/manual/html_node/Application-Layer-Protocol-Negotiation-_0028ALPN_0029.html) | as of 3.2.0 (stable-next)
 C | [NSS](https://developer.mozilla.org/en/docs/NSS) | [released](https://developer.mozilla.org/en-US/docs/NSS/NSS_3.15.5_release_notes#New_Functionality) | client support only as of 3.15.5; server support still pending (see [bug 996250](https://bugzilla.mozilla.org/show_bug.cgi?id=996250))
+C | [PolarSSL](https://polarssl.org) | [released](https://polarssl.org/tech-updates/releases/polarssl-1.3.6-released) | since 1.3.6 
 Python | [native](http://docs.python.org/3/library/ssl.html) | [requested](http://bugs.python.org/issue20188) | OpenSSL based; 3.x only
 Python | [tlslite](http://trevp.net/tlslite/) | [requested](https://github.com/trevp/tlslite/issues/19) | 
 Python | [pyOpenSSL](https://github.com/pyca/pyopenssl) | [requested](https://github.com/pyca/pyopenssl/pull/120) | 
