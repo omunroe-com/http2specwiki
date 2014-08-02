@@ -1,4 +1,4 @@
-This page tracks implementation status of [ALPN](http://tools.ietf.org/html/draft-ietf-tls-applayerprotoneg).
+This page tracks implementation status of [ALPN](http://tools.ietf.org/html/rfc7301).
 
 Language | Library | Status | Notes
 --- | --- | --- | --- 
