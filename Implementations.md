@@ -12,7 +12,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | draft-12
 [Test GFE](Hasansgfe) | C++ | intermediary | ALPN, NPN | draft-13
 [Twitter](https://twitter.com/) | Java | server, client | NPN | draft-13
-[Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct | draft-13
+[Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct |**draft-14** (draft-13 for 1.12)
 [Ericsson MSP](EricssonMPS) | | proxy | NPN, Upgrade, direct | draft-06
 [http2-go](https://github.com/Jxck/http2) | golang | client, server | NPN | draft-12
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | draft-12
