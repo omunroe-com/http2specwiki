@@ -24,3 +24,4 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN | draft-13
 [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=jetty-http2) | Java | client, server | ALPN, NPN | draft-12
 [F5](F5)| C | server, proxy | ALPN, NPN | draft-13
+[Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN | draft-14
