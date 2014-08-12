@@ -8,7 +8,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Mozilla](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | **draft-14**
 [http2-perl](https://github.com/sludin/http2-perl) | Perl | client, server | NPN | draft-04
 [iij-http2](https://github.com/shigeki/interop-iij-http2) | NodeJS | client, server| ALPN, NPN | draft-13
-[Akamai Ghost](Akamaighost) | C++ | intermediary | NPN | **draft-14**
+[Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN | **draft-14**
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | draft-12
 [Test GFE](Hasansgfe) | C++ | intermediary | ALPN, NPN | draft-13
 [Twitter](https://twitter.com/) | Java | server, client | NPN | draft-13
