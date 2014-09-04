@@ -9,7 +9,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [http2-perl](https://github.com/sludin/http2-perl) | Perl | client, server | NPN | draft-04
 [iij-http2](https://github.com/shigeki/interop-iij-http2) | NodeJS | client, server| ALPN, NPN | draft-13
 [Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN | **draft-14**
-[Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | draft-12
+[Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | **draft-14**
 [Test GFE](testgfe) | C++ | intermediary | ALPN, NPN | **draft-14**
 [Twitter](https://twitter.com/) | Java | server, client | NPN | draft-13
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct |**draft-14** (draft-13 for 1.12)
