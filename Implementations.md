@@ -26,3 +26,4 @@ implementation | language | role(s) | negotiation(s) | draft support
 [F5](F5)| C | server, proxy | ALPN, NPN | draft-13
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN | **draft-14**
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | **draft-14**
+[Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct | **draft-14**
