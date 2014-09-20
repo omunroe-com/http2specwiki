@@ -92,6 +92,8 @@ Alice is fond of Rock music. Thanks to her premium data subscription plan, Alice
 
 _This user story's requirements are currently met by IP-level access controls._
 
+_*IP-level access controls are impractical due to large amount of IPs being used by music services, dynamic nature of IP allocation and use of the same IPs to serve other content such as Video, which may require a different subscription or charging scheme._
+
 ## Nancy's kids' mobile devices
 
 Nancy's kids use mobile devices such as phones and tablets outside home. Nancy wants to sign up those devices with mobile operator's parental control service which is set up through a proxy to limit access from those devices to certain web sites to keep her kids browsing safely also limit certain contents like video streaming when close to the data plan quota in order to keep the data usage under control and no surprise bill.
