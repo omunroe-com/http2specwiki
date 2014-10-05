@@ -9,3 +9,5 @@ However, if the server does not provide all of this information (cipher suite an
 This effectively prevents conformant deployment of h2 on platforms where such TLS information isn't available, until they are modified or alternate implementations of TLS are used. 
 
 Non-conformant deployment is still possible if they ignore the requirement to raise INADEQUATE_SECURITY when the cipher suite isn't sufficient; however, it's likely that the client (being conformant) will do so, closing the connection.
+
+As such, the issue here is a conflict between our desire to improve security in the new protocol and our desire for immediate, wide adoption.
