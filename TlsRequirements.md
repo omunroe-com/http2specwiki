@@ -1,3 +1,4 @@
+_This page records potential problems with the TLS requirements in Section 9.2.2, as per #612._ 
 
 ## Server Information Availability
 
