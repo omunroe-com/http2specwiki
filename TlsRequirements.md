@@ -1,4 +1,4 @@
-_This page records potential problems with the TLS requirements in Section 9.2.2, as per http2/http2-spec#612._ 
+_This page records potential problems with the TLS requirements in Section 9.2.2, as per [issue 612](https://github.com/http2/http2-spec/issues/612)._ 
 
 ## Server Information Availability
 
