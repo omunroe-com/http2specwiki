@@ -18,11 +18,11 @@ However, this requires clients' TLS implementation to have this capability.
 Note that it is defined as a list, and client preference is highlighted as an important aspect of the protocol. 
 
 
-## Server Information Availability
+## Server Cipher Suite and Protocol Selection
 
 If a client offers what is known to the server to be a h2-compatible cipher suite, the server can choose h2 provided that ALPN also includes h2; if neither is true, the server will stay on h1.
 
-However, if the TLS implementation in use by the server does not the decisions of cipher suite to use and protocol to use to be linked, it's possible that a cipher suite will be negotiated that is disallowed by HTTP/2.
+However, if the TLS implementation in use by the server does not allow the decisions of cipher suite to use and protocol to use to be linked, it's possible that a cipher suite will be negotiated that is disallowed by HTTP/2.
 
 This effectively prevents conformant deployment of h2 on such platforms, until they are modified or alternate implementations of TLS are used. 
 
@@ -34,6 +34,5 @@ As such, the issue here is a conflict between our desire to improve security in 
 
 If a client offers a new cipher suite that it believes to be conformant to h2 requirements, but the server does not yet recognise it as conformant, it will not be used; instead, they will fall back to another cipher suite (ultimately, the one required for interop if no other matches).
 
-Thus, 9.2 makes it marginally harder to introduce new cipher suites, because both sides have to recognise them as conformant to h2 requirements.
-
+However, TLS 1.2 only defines three values for SecurityParameters.cipher_type; GenericStreamCipher, GenericBlockCipher and GenericAEADCipher. Thus, it should be possible to recognise a conformant cipher suite without recoding the server, mitigating this issue.
 
