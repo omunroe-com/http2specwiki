@@ -23,7 +23,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | **draft-14**
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN | **draft-14**
 [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=jetty-http2) | Java | client, server | ALPN, NPN | **draft-14**
-[F5](F5)| C | server, proxy | ALPN, NPN | draft-13
+[F5](F5)| C | server, proxy | ALPN, NPN | **draft-14**
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN | **draft-14**
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | **draft-14**
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct | **draft-14**
