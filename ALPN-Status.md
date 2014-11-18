@@ -16,3 +16,5 @@ Ruby | [native](http://ruby-doc.org/stdlib-2.0/libdoc/openssl/rdoc/OpenSSL.html)
 C | [SChannel](http://technet.microsoft.com/en-us/library/hh831771.aspx) | released | Added in Windows 8.1 / Server 2012 R2
 Java | [android](https://code.google.com/p/android/issues/detail?id=56942) | released | Added in Android 4.4  
 Java | [jetty](https://github.com/jetty-project/jetty-alpn/) | released |
+
+Note that some client implementations deal very poorly if a server responds to both ALPN and NPN.  When a server responds negotiating ALPN, it must not send an NPN negotiation response as well.
