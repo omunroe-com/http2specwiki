@@ -22,7 +22,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [hyper](https://github.com/lukasa/hyper) | Python | client | NPN | **draft-14**
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | **draft-14**
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | **draft-14**
-[Netty](http://netty.io/) | Java | client, server | ALPN, NPN | **draft-14**
+[Netty](http://netty.io/) | Java | client, server | ALPN, NPN | **draft-15**
 [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=jetty-http2) | Java | client, server | ALPN, NPN | **draft-14**
 [F5](F5)| C | server, proxy | ALPN, NPN | **draft-14**
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN | **draft-14**
