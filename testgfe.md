@@ -1,1 +1,1 @@
-If you wish to test HTTP/2 with Google's properties, please contact [Michaela LaVan](mlavan@google.com).
+If you wish to test HTTP/2 with Google's properties, please contact [Biren Roy](birenroy@google.com).
