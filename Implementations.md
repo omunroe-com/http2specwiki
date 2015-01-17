@@ -28,6 +28,6 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN | draft-14
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | draft-14
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct | draft-14
-[H2O](https://github.com/kazuho/h2o) | C | Server | ALPN, NPN, Upgrade, direct | draft-14
+[H2O](https://github.com/kazuho/h2o) | C | Server | ALPN, NPN, Upgrade, direct | **draft-16**
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade | draft-15
 [Deuterium](http://robbysimpson.com) | C | Server | ALPN, direct | draft-14
