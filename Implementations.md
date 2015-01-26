@@ -31,3 +31,4 @@ implementation | language | role(s) | negotiation(s) | draft support
 [H2O](https://github.com/kazuho/h2o) | C | Server | ALPN, NPN, Upgrade, direct | **draft-16**
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade | draft-15
 [Deuterium](http://robbysimpson.com) | C | Server | ALPN, direct | draft-14
+[OpenLiteSpeed](http://open.litespeedtech.com) | C | Server | ALPN, NPN, Upgrade | draft 16
