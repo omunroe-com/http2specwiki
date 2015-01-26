@@ -6,7 +6,7 @@ C | [OpenSSL](http://www.openssl.org) | [in next release](http://git.openssl.org
 C | [GnuTLS](http://www.gnutls.org/) | [released](http://gnutls.org/manual/html_node/Application-Layer-Protocol-Negotiation-_0028ALPN_0029.html) | as of 3.2.0 (stable-next)
 C | [NSS](https://developer.mozilla.org/en/docs/NSS) | [released](https://developer.mozilla.org/en-US/docs/NSS/NSS_3.15.5_release_notes#New_Functionality) | client and server support
 C | [PolarSSL](https://polarssl.org) | [released](https://polarssl.org/tech-updates/releases/polarssl-1.3.6-released) | since 1.3.6 
-Python | [native](http://docs.python.org/3/library/ssl.html) | [requested](http://bugs.python.org/issue20188) | OpenSSL based; 3.x only
+Python | [native](http://docs.python.org/3/library/ssl.html) | [requested](http://bugs.python.org/issue20188) | OpenSSL based; Patches in progress for 3.5 and 2.7.x
 Python | [tlslite](http://trevp.net/tlslite/) | [requested](https://github.com/trevp/tlslite/issues/19) | 
 Python | [pyOpenSSL](https://github.com/pyca/pyopenssl) | [requested](https://github.com/pyca/pyopenssl/pull/120) | 
 Go | [native](http://golang.org/pkg/crypto/tls/) | [in next release](https://code.google.com/p/go/source/detail?r=71dc1b4815f2) |
