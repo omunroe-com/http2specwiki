@@ -30,5 +30,5 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct | draft-14
 [H2O](https://github.com/kazuho/h2o) | C | Server | ALPN, NPN, Upgrade, direct | **draft-16**
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade | draft-15
-[Deuterium](http://robbysimpson.com/deuterium) | C | Server | ALPN, direct | draft-14
+[Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct | draft-14
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | **draft-16**
