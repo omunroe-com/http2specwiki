@@ -19,7 +19,7 @@ implementation | language | role(s) | negotiation(s) | draft support
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | **draft-16**
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct | draft-14
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | NPN, direct | draft-14
-[hyper](https://github.com/lukasa/hyper) | Python | client | NPN | draft-14
+[hyper](https://github.com/lukasa/hyper) | Python | client | NPN | **draft-16**
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | draft-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | draft-14
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN | **draft-16**
