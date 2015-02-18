@@ -32,3 +32,5 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade | draft-15
 [Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct | draft-14
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | **draft-16**
+[Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | | **draft-16**
+[Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct | **draft-16**
