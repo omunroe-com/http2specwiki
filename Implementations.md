@@ -34,3 +34,4 @@ implementation | language | role(s) | negotiation(s) | draft support
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | **draft-16**
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | | **draft-16**
 [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct | **draft-16**
+[Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | **draft-17**
