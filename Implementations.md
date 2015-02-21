@@ -35,3 +35,4 @@ implementation | language | role(s) | negotiation(s) | draft support
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | | **draft-16**
 [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct | **draft-16**
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | **draft-17**
+[Riverbed SteelApp ADC](http://www.riverbed.com/products/application-delivery-performance/load-balancer.html) | C++ | Server | ALPN, Upgrade | **draft-16**
