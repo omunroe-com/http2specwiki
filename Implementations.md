@@ -23,7 +23,7 @@ num | name | language | role(s) | negotiation(s) | draft support
 19 | [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | draft-14
 20 | [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | draft-14
 21 | [Netty](http://netty.io/) | Java | client, server | ALPN, NPN | **draft-16**
-22 | [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, server | ALPN, NPN | draft-14
+22 | [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, server | ALPN, Upgrade, Direct | draft-16
 23 | [F5](F5)| C | server, proxy | ALPN, NPN | **draft-16**
 24 | [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN | draft-14
 25 | [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | draft-14
