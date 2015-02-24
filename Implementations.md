@@ -1,6 +1,6 @@
 This wiki tracks known implementations of HTTP/2. If you have questions or issues updating it, please contact [Mark Nottingham](mailto:mnot@mnot.net).
 
-number | implementation | language | role(s) | negotiation(s) | draft support
+num | name | language | role(s) | negotiation(s) | draft support
 --- | --- | --- | --- | --- | ---
 1 | [nghttp2](https://nghttp2.org) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | draft-14
 2 | [http2-katana](https://github.com/MSOpenTech/http2-katana) | C# | server, test client | ALPN, Upgrade | draft-12
