@@ -2,7 +2,7 @@ This page tracks implementation status of [ALPN](http://tools.ietf.org/html/rfc7
 
 Language | Library | Status | Notes
 --- | --- | --- | --- 
-C | [OpenSSL](http://www.openssl.org) | [in next release](http://git.openssl.org/gitweb/?p=openssl.git;a=blob;f=NEWS;h=fc466ae3cc1ee38b566516eafe913e32409798a4;hb=HEAD) | scheduled for 1.0.2
+C | [OpenSSL](http://www.openssl.org) | [released](http://git.openssl.org/gitweb/?p=openssl.git;a=blob;f=NEWS;h=fc466ae3cc1ee38b566516eafe913e32409798a4;hb=HEAD) | as of 1.0.2
 C | [GnuTLS](http://www.gnutls.org/) | [released](http://gnutls.org/manual/html_node/Application-Layer-Protocol-Negotiation-_0028ALPN_0029.html) | as of 3.2.0 (stable-next)
 C | [NSS](https://developer.mozilla.org/en/docs/NSS) | [released](https://developer.mozilla.org/en-US/docs/NSS/NSS_3.15.5_release_notes#New_Functionality) | client and server support
 C | [PolarSSL](https://polarssl.org) | [released](https://polarssl.org/tech-updates/releases/polarssl-1.3.6-released) | since 1.3.6 
