@@ -31,7 +31,7 @@ num | name | language | role(s) | negotiation(s) | draft support
 27 | [H2O](https://github.com/kazuho/h2o) | C | Server | ALPN, NPN, Upgrade, direct | **final**, draft-16, draft-14
 28 | [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade | draft-15
 29 | [Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct | draft-14
-30 | [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | **draft-16**
+30 | [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | **draft-17**
 31 | [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | | **draft-16**
 32 | [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct | **draft-16**
 33 | [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | **draft-17**
