@@ -14,7 +14,7 @@ num | name | language | role(s) | negotiation(s) | draft support
 10 | [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | final
 11 | [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct | draft-16 (draft-13 for 1.12)
 12 | [Ericsson MSP](EricssonMSP) | | proxy | NPN, Upgrade, direct | draft-15
-13 | [http2](https://github.com/bradfitz/http2) | Go | client, server | NPN (+ ALPN w/ Go 1.4)   | draft-14
+13 | [http2](https://github.com/bradfitz/http2) | Go | client, server | NPN (+ ALPN w/ Go 1.4)   | final
 14 | [http2-go](https://github.com/Jxck/http2) | Go | client, server | NPN | draft-12
 15 | [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | draft-16
 16 | [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct | draft-16
