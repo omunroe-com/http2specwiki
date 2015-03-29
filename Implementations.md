@@ -5,7 +5,7 @@ num | name | language | role(s) | negotiation(s) | draft support
 1 | [nghttp2](https://nghttp2.org) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | draft-14
 2 | [http2-katana](https://github.com/MSOpenTech/http2-katana) | C# | server, test client | ALPN, Upgrade | draft-12
 3 | [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct | draft-16
-4 | [Mozilla](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | draft-16
+4 | [Mozilla Firefox](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | draft-16
 5 | [http2-perl](https://github.com/sludin/http2-perl) | Perl | client, server | NPN | draft-04
 6 | [iij-http2](https://github.com/shigeki/interop-iij-http2) | NodeJS | client, server| ALPN, NPN | draft-13
 7 | [Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN | draft-14
