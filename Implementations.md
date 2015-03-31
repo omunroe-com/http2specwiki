@@ -36,5 +36,5 @@ num | name | language | role(s) | negotiation(s) | draft support
 32 | [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct | draft-16
 33 | [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | draft-17
 34 | [Riverbed SteelApp ADC](http://www.riverbed.com/products/application-delivery-performance/load-balancer.html) | C++ | Server | ALPN, Upgrade | draft-16
-35 | [mod_h2](https://icing.github.io/mod_h2/) | C | Server | ALPN, Upgrade |  draft-14
+35 | [mod_h2](https://icing.github.io/mod_h2/) | C | Server | ALPN, NPN, Upgrade |  final
 36 | [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN |  draft-14
