@@ -1,6 +1,6 @@
 This wiki tracks known implementations of HTTP/2. If you have questions or issues updating it, please contact [Mark Nottingham](mailto:mnot@mnot.net).
 
-name | language | role(s) | negotiation(s) | advertised id(s)
+name | language | role(s) | negotiation(s) | protocol id(s)
 --- | --- | --- | --- | ---
 [nghttp2](https://nghttp2.org) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | 
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct | 
@@ -37,7 +37,7 @@ name | language | role(s) | negotiation(s) | advertised id(s)
 
 ## Older Implementations
 
-name | language | role(s) | negotiation(s) | advertised id(s)
+name | language | role(s) | negotiation(s) | protocol id(s)
 --- | --- | --- | --- | ---
 [http2-katana](https://github.com/MSOpenTech/http2-katana) | C#/C | server, test client | ALPN, Upgrade | h2-12
 [http2-perl](https://github.com/sludin/http2-perl) | Perl | client, server | NPN | h2-04
