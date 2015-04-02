@@ -26,7 +26,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN |
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade |
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | h2-17, h2-14, h2c-17, h2c-14
-[Riverbed SteelApp ADC](http://www.riverbed.com/products/application-delivery-performance/load-balancer.html) | C++ | Server | ALPN, Upgrade |
+[Riverbed SteelApp ADC](http://www.riverbed.com/products/application-delivery-performance/load-balancer.html) | C++ | Server | ALPN, NPN, Upgrade, direct | h2-14, h2c-14
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
 [Test GFE](testgfe) | C++ | intermediary | ALPN, NPN |
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
