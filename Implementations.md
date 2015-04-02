@@ -17,9 +17,9 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [hyper](https://github.com/lukasa/hyper) | Python | client | NPN |
 [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, intermediary, server | ALPN, Upgrade, Direct | h2, h2-17, h2-14, h2c, h2c-17
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct |
-[Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN |
+[Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | h2
 [mod_h2](https://icing.github.io/mod_h2/) | C | Server | ALPN, NPN, Upgrade |
-[Mozilla Firefox](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN |
+[Mozilla Firefox](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | h2-15, h2-14, h2
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN |
 [nghttp2](https://nghttp2.org) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct |
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct |
