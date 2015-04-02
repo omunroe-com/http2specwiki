@@ -21,7 +21,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [mod_h2](https://icing.github.io/mod_h2/) | C | Server | ALPN, NPN, Upgrade | h2c?(-1[46])?
 [Mozilla Firefox](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | h2-15, h2-14, h2
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN |
-[nghttp2](https://nghttp2.org) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct |
+[nghttp2](https://nghttp2.org) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | h2, h2-16, h2-14, h2c-14
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct |
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN |
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade |
