@@ -10,7 +10,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct |
 [Ericsson MSP](EricssonMSP) | | proxy | NPN, Upgrade, direct |
 [F5](F5)| C | server, proxy | ALPN, NPN |
-[H2O](https://github.com/kazuho/h2o) | C | Server, proxy | ALPN, NPN, Upgrade, direct |
+[H2O](https://github.com/kazuho/h2o) | C | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | |
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | ALPN, NPN, Upgrade, direct | h2, h2c, h2-17
 [http2](https://github.com/bradfitz/http2) | Go | client, server | NPN (+ ALPN w/ Go 1.4)   |
