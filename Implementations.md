@@ -14,7 +14,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | |
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | ALPN, NPN, Upgrade, direct | h2, h2c, h2-17
 [http2](https://github.com/bradfitz/http2) | Go | client, server | NPN (+ ALPN w/ Go 1.4)   |
-[hyper](https://github.com/lukasa/hyper) | Python | client | NPN |
+[hyper](https://github.com/lukasa/hyper) | Python | client | NPN | h2, h2-16, h2-15, h2-14
 [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, intermediary, server | ALPN, Upgrade, Direct | h2, h2-17, h2-14, h2c, h2c-17
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct |
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | h2
