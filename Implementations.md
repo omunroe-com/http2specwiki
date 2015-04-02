@@ -19,7 +19,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | 
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | 
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN | 
-[Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, intermediary, server | ALPN, Upgrade, Direct | 
+[Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, intermediary, server | ALPN, Upgrade, Direct | h2,h2-17,h2-14,h2c,h2c-17
 [F5](F5)| C | server, proxy | ALPN, NPN | 
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN | 
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | 
