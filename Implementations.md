@@ -4,7 +4,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 --- | --- | --- | --- | ---
 [Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN |
 [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN |
-[Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN |
+[Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct |
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade |
 [Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct |
