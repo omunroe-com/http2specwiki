@@ -9,7 +9,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | 
 [Test GFE](testgfe) | C++ | intermediary | ALPN, NPN | 
 [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | 
-[Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct |  ( for 1.12)
+[Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct | 
 [Ericsson MSP](EricssonMSP) | | proxy | NPN, Upgrade, direct | 
 [http2](https://github.com/bradfitz/http2) | Go | client, server | NPN (+ ALPN w/ Go 1.4)   | 
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | 
@@ -19,7 +19,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | 
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | 
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN | 
-[Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, intermediary, server | ALPN, Upgrade, Direct | final, , 
+[Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, intermediary, server | ALPN, Upgrade, Direct | 
 [F5](F5)| C | server, proxy | ALPN, NPN | 
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN | 
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | 
