@@ -7,7 +7,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | h2, h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct |
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade |
-[Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct |
+[Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct | h2, h2-14, h2c, h2c-14
 [Ericsson MSP](EricssonMSP) | | proxy | NPN, Upgrade, direct |
 [F5](F5)| C | server, proxy | ALPN, NPN |
 [H2O](https://github.com/kazuho/h2o) | C | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
