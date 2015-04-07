@@ -23,7 +23,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN |
 [nghttp2](https://nghttp2.org) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | h2, h2-16, h2-14, h2c-14
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct | h2
-[OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN |
+[OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | h2
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade |
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | h2-17, h2-14, h2c-17, h2c-14
 [Riverbed SteelApp ADC](http://www.riverbed.com/products/application-delivery-performance/load-balancer.html) | C++ | Server | ALPN, NPN, Upgrade, direct | h2-14, h2c-14
