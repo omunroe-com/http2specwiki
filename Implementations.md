@@ -30,7 +30,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
 [Test GFE](testgfe) | C++ | intermediary | ALPN, NPN |
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
-[Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN |
+[Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | h2
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade |
 [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct |
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct |
