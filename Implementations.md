@@ -2,7 +2,7 @@ This wiki tracks known implementations of HTTP/2. If you have questions or issue
 
 name | language | role(s) | negotiation(s) | protocol id(s)
 --- | --- | --- | --- | ---
-[Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN |
+[Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN | h2-14
 [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN | h2, h2-14
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | h2, h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct |
