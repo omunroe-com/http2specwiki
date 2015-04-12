@@ -28,6 +28,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | h2-17, h2-14, h2c-17, h2c-14
 [Riverbed SteelApp ADC](http://www.riverbed.com/products/application-delivery-performance/load-balancer.html) | C++ | Server | ALPN, NPN, Upgrade, direct | h2-14, h2c-14
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
+[second-transfer](https://github.com/alcidesv/second-transfer) | Haskell | server | ALPN | h2-14
 [Test GFE](testgfe) | C++ | intermediary | ALPN, NPN |
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
 [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | h2
