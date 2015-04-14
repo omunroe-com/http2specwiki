@@ -9,7 +9,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | h2-14, h2c-14
 [Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct | h2, h2-14, h2c, h2c-14
 [Ericsson MSP](EricssonMSP) | | proxy | NPN, Upgrade, direct |  h2, h2-14, h2c, h2c-14
-[F5](F5)| C | server, proxy | ALPN, NPN |
+[F5](F5)| C | server, proxy | ALPN, NPN | h2-14 (11.6.0) h2 (upcoming release)
 [H2O](https://github.com/kazuho/h2o) | C | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | |
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | ALPN, NPN, Upgrade, direct | h2, h2c, h2-17
