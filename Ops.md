@@ -64,14 +64,14 @@ clients as they re-connect.
 
 HTTP/2, however, is designed to have fewer, longer-lived connections, and it's anticipated that
 clients will be keeping them open much more aggressively. This provides fewer opportunities for
-servers to shift traffic. If a server breaks connections pre-emtively in order to load balance or
+servers to shift traffic. If a server breaks connections pre-emptively in order to load balance or
 failover, it can also have a greater negative effect, since more than one request can be "in
 flight" simultaneously.
 
 The new protocol accommodates these situations in a few ways, improving operability along the way.
 
 Firstly, the GOAWAY frame allows servers to announce that they will not serve additional requests on
-a connection, while still completing those that preceed the GOAWAY. This allows a connection to be
+a connection, while still completing those that precede the GOAWAY. This allows a connection to be
 shut down in an orderly fashion, and its use is required in HTTP/2.
 
 Additionally, the ALTSVC frame allows a server to redirect traffic to another location, without
