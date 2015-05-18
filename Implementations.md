@@ -17,7 +17,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [http2](https://github.com/bradfitz/http2) | Go | client, server | NPN (+ ALPN w/ Go 1.4)   |
 [hyper](https://github.com/lukasa/hyper) | Python | client | NPN | h2, h2-16, h2-15, h2-14
 [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, intermediary, server | ALPN, Upgrade, Direct | h2, h2-17, h2-14, h2c, h2c-17
-[LiteSpeed Enterprise](http://www.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | h2
+[LiteSpeed Enterprise](http://www.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | h2, h2-17, h2-14, h2c
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct | h2, h2-16, h2-14
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | h2
 [mod_h2](https://icing.github.io/mod_h2/) | C | Server | ALPN, NPN, Upgrade | h2, h2c (plus -14,-16)
