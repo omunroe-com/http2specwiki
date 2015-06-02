@@ -8,7 +8,7 @@ C | [NSS](https://developer.mozilla.org/en/docs/NSS) | [released](https://develo
 C | [PolarSSL](https://polarssl.org) | [released](https://polarssl.org/tech-updates/releases/polarssl-1.3.6-released) | since 1.3.6 
 Python | [native](http://docs.python.org/3/library/ssl.html) | [in 3.5 and 2.7.10](http://bugs.python.org/issue20188) | OpenSSL based
 Python | [tlslite](http://trevp.net/tlslite/) | [requested](https://github.com/trevp/tlslite/issues/19) | 
-Python | [pyOpenSSL](https://github.com/pyca/pyopenssl) | [released](0.15.0, with cryptography 0.9) | 
+Python | [pyOpenSSL](https://github.com/pyca/pyopenssl) | [released](https://github.com/pyca/pyopenssl/pull/120) | 0.15.0, with cryptography 0.9
 Go | [native](http://golang.org/pkg/crypto/tls/) | [in next release](https://code.google.com/p/go/source/detail?r=71dc1b4815f2) |
 C++ | [yaSSL](http://www.wolfssl.com/yaSSL/) | [requested](https://github.com/cyassl/cyassl/issues/66) |
 JavaScript | [NodeJS](http://nodejs.org/api/tls.html) | [requested](https://github.com/joyent/node/issues/5945) | waiting for stable OpenSSL
