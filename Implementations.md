@@ -28,7 +28,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | h2
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | h2, h2-17 , h2-14, h2c
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | h2, h2c
-[Riverbed SteelApp ADC](http://www.riverbed.com/products/application-delivery-performance/load-balancer.html) | C++ | Server | ALPN, NPN, Upgrade, direct | h2-14, h2c-14
+[Brocade SteelApp Traffic Manager (previously Riverbed/Zeus](http://www.brocade.com/products/all/application-delivery-controllers/product-details/steelapp-traffic-manager/index.page) | C++ | Server | ALPN, NPN, Upgrade, direct | h2, h2c
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
 [second-transfer](https://github.com/alcidesv/second-transfer) | Haskell | server | ALPN | h2-14, h2
 [Test GFE](testgfe) | C++ | intermediary | ALPN, NPN |
