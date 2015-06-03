@@ -4,6 +4,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 --- | --- | --- | --- | ---
 [Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN | h2-14
 [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN | h2, h2-14
+[http4s-blaze](https://github.com/http4s/blaze) | Scala | server | ALPN | h2, h2-14
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | h2, h2-14
 [Chicken Scheme hpack lib] (http://wiki.call-cc.org/eggref/4/hpack) | Chicken Scheme | hpack | direct | h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | h2-14
