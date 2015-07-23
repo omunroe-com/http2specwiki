@@ -16,5 +16,6 @@ Ruby | [native](http://ruby-doc.org/stdlib-2.0/libdoc/openssl/rdoc/OpenSSL.html)
 C | [SChannel](http://technet.microsoft.com/en-us/library/hh831771.aspx) | released | Added in Windows 8.1 / Server 2012 R2
 Java | [android](https://code.google.com/p/android/issues/detail?id=56942) | released | Added in Android 4.4  
 Java | [jetty](https://github.com/jetty-project/jetty-alpn/) | released |
+Haskell | [warp](https://github.com/yesodweb/wai) [hackage](https://hackage.haskell.org/package/warp) | released |
 
 Note that some client implementations deal very poorly if a server sends both ALPN and NPN in the ServerHello.  When a server responds negotiating a protocol via ALPN in the ServerHello, it must not also send a list of protocols for NPN negotiation as well.
