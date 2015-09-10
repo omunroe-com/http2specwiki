@@ -40,6 +40,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade |
 [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct |
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct |
+[WKWebView](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKWebView_Ref/) | Obj-C, Swift | client | |
 
 ## Older Implementations
 
