@@ -34,6 +34,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Brocade SteelApp Traffic Manager (formerly Riverbed/Zeus TM)](http://www.brocade.com/products/all/application-delivery-controllers/product-details/steelapp-traffic-manager/index.page) | C++ | Server | ALPN, NPN, Upgrade, direct | h2, h2c
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
 [second-transfer](https://github.com/alcidesv/second-transfer) | Haskell | server | ALPN | h2-14, h2
+[ShimmerCat](https://www.zunzun.se) | Haskell | server | ALPN, Ahead Of Time Transfer Engine | h2 
 [Test GFE](testgfe) | C++ | intermediary | ALPN, NPN |
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
 [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | h2
