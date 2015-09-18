@@ -9,6 +9,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Chicken Scheme hpack lib] (http://wiki.call-cc.org/eggref/4/hpack) | Chicken Scheme | hpack | direct | h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | h2-14
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | h2-14, h2c-14
+[Dart](https://github.com/dart-lang/http2) | Dart | client, server | ALPN, direct | h2
 [Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct | h2, h2-14, h2c, h2c-14
 [Ericsson MSP](EricssonMSP) | | proxy | NPN, Upgrade, direct |  h2, h2-14, h2c, h2c-14
 [F5](F5)| C | server, proxy | ALPN, NPN | h2-14 (11.6.0 HF2) h2 (upcoming release)
