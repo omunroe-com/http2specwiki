@@ -30,7 +30,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN, Upgrade, direct | h2, h2c
 [nghttp2](https://nghttp2.org) | C | client, server, intermediary | ALPN, NPN, Upgrade, direct | h2, h2-16, h2-14, h2c
 [Radware](https://www.radware.com/FastViewHTTP2/) | C++/C | proxy, server | ALPN | h2
-[NGINX](https://www.nginx.com/blog/nginx-1-9-5/) | C | server | | h2, h2c
+[NGINX](https://www.nginx.com/blog/nginx-1-9-5/) | C | server | ALPN, NPN, direct | h2, h2c
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct | h2
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | h2
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | h2, h2-17 , h2-14, h2c
