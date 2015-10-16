@@ -3,7 +3,7 @@ This wiki tracks known implementations of HTTP/2. If you have questions or issue
 name | language | role(s) | negotiation(s) | protocol id(s)
 --- | --- | --- | --- | ---
 [Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN | h2-14
-[Apache HTTP Server 2.4.17](http://httpd.apache.org/) | C | server | ALPN, NPN, Upgrade, direct | h2, h2c
+[Apache HTTP Server 2.4.17](http://httpd.apache.org/) | C | server | ALPN, Upgrade, direct | h2, h2c
 [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN | h2, h2-14
 [http4s-blaze](https://github.com/http4s/blaze) | Scala | server | ALPN | h2, h2-14
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | h2, h2-14
