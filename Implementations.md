@@ -17,7 +17,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [H2O](https://github.com/h2o/h2o) | C | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | |
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | ALPN, NPN, Upgrade, direct | h2, h2c, h2-17
-[http2](https://github.com/bradfitz/http2) | Go | client, server | NPN (+ ALPN w/ Go 1.4)   |
+[http2](https://golang.org/x/net/http2) | Go | client, server | NPN (+ ALPN w/ Go 1.4)   |
 [hyper](https://github.com/lukasa/hyper) | Python | client | NPN | h2, h2-16, h2-15, h2-14
 [hyper](https://github.com/hyperium/hyper) | Rust | client | Upgrade | h2
 [Shaka Technologies Ishlangu Load Balancer](https://www.shakatechnologies.com/) | C, Java | server, proxy | ALPN | h2
