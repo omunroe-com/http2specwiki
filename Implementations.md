@@ -12,7 +12,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [curl and libcurl](http://curl.haxx.se/) | C | client | ALPN, NPN, Upgrade | h2-14, h2c-14
 [Dart](https://github.com/dart-lang/http2) | Dart | client, server | ALPN, direct | h2
 [Deuterium](http://robbysimpson.com/deuterium) | C | client, server | ALPN, direct | h2, h2-14, h2c, h2c-14
-[E2 Systems PATH](http://www.e2-systems.co.uk) | C | Client, Server (Testing tool) | ALPN | h2
+[E2 Systems PATH](http://www.e2-systems.co.uk) | C | Client, Proxy, Server (Testing tool) | ALPN | h2
 [Ericsson MSP](EricssonMSP) | | proxy | NPN, Upgrade, direct |  h2, h2-14, h2c, h2c-14
 [F5](F5)| C | server, proxy | ALPN, NPN | h2-14 (11.6.0 HF2) h2 (upcoming release)
 [H2O](https://github.com/h2o/h2o) | C | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
