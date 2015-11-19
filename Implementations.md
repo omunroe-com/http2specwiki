@@ -2,6 +2,7 @@ This wiki tracks known implementations of HTTP/2. If you have questions or issue
 
 name | language | role(s) | negotiation(s) | protocol id(s)
 --- | --- | --- | --- | ---
+[Aerys](https://github.com/amphp/aerys) | PHP | server | ALPN, Upgrade, direct | h2, h2c
 [Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN | h2-14
 [Apache HTTP Server 2.4.17](http://httpd.apache.org/) | C | server | ALPN, Upgrade, direct | h2, h2c
 [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN | h2, h2-14
