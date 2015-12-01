@@ -7,7 +7,7 @@
 * [h2load](https://nghttp2.org/documentation/h2load-howto.html) is a benchmarking / load generation tool for HTTP/2 and SPDY.
 * [is-http2](https://github.com/stefanjudis/is-http2-cli) lets you quickly find out if a host supports H2 from the command line.
 * [Wireshark](https://wireshark.org/) has a [HTTP/2 decoder](https://wiki.wireshark.org/HTTP2)<sup>2</sup>.
-
+* [h2c](https://github.com/fstab/h2c) - A Simple HTTP/2 Command-Line Client
 ---
 
 <sup>1</sup> Curl is strictly an [implementation](Implementations), but it's listed here because many people use it as a tool.
