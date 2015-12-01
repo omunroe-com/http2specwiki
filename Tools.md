@@ -8,12 +8,12 @@
 * [is-http2](https://github.com/stefanjudis/is-http2-cli) lets you quickly find out if a host supports H2 from the command line.
 * [Wireshark](https://wireshark.org/) has a [HTTP/2 decoder](https://wiki.wireshark.org/HTTP2)<sup>2</sup>.
 * [h2c](https://github.com/fstab/h2c) - A Simple HTTP/2 Command-Line Client
+* [h2spec](https://github.com/summerwind/h2spec) - Conformance testing tool for HTTP/2 implementations
 
 ---
 
 <sup>1</sup> Curl is strictly an [implementation](Implementations), but it's listed here because many people use it as a tool.
 
 <sup>2</sup> Note that to use it on TLS-protected connections, you'll need to do [NSS Keylogging](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format). See also the [Wireshark SSL/TLS docs](https://wiki.wireshark.org/SSL).
-
 
 
