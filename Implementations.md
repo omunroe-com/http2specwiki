@@ -9,6 +9,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Apache HTTP Server 2.4.17](http://httpd.apache.org/) | C | server | ALPN, Upgrade, direct | h2, h2c
 [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN | h2, h2-14
 [http4s-blaze](https://github.com/http4s/blaze) | Scala | server | ALPN | h2, h2-14
+[Brocade SteelApp Traffic Manager (formerly Riverbed/Zeus TM)](http://www.brocade.com/products/all/application-delivery-controllers/product-details/steelapp-traffic-manager/index.page) | C++ | Server | ALPN, Upgrade, direct | h2, h2c
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | h2, h2-14
 [Chicken Scheme hpack lib] (http://wiki.call-cc.org/eggref/4/hpack) | Chicken Scheme | hpack | direct | h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | h2-14
@@ -39,7 +40,6 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | h2
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | h2, h2-17 , h2-14, h2c
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | h2, h2c
-[Brocade SteelApp Traffic Manager (formerly Riverbed/Zeus TM)](http://www.brocade.com/products/all/application-delivery-controllers/product-details/steelapp-traffic-manager/index.page) | C++ | Server | ALPN, NPN, Upgrade, direct | h2, h2c
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
 [second-transfer](https://github.com/alcidesv/second-transfer) | Haskell | server | ALPN | h2-14, h2
 [ShimmerCat](https://www.zunzun.se) | Haskell | server | ALPN, Ahead Of Time Transfer Engine | h2 
