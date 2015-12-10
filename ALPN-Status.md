@@ -17,5 +17,6 @@ C | [SChannel](http://technet.microsoft.com/en-us/library/hh831771.aspx) | relea
 Java | [android](https://code.google.com/p/android/issues/detail?id=56942) | released | Added in Android 4.4  
 Java | [jetty](https://github.com/jetty-project/jetty-alpn/) | released |
 Haskell | [warp](https://github.com/yesodweb/wai) [hackage](https://hackage.haskell.org/package/warp) | released |
+Lua | [luaossl](https://github.com/wahern/luaossl) | released | Added in 20150422
 
 Note that some client implementations deal very poorly if a server sends both ALPN and NPN in the ServerHello.  When a server responds negotiating a protocol via ALPN in the ServerHello, it must not also send a list of protocols for NPN negotiation as well.
