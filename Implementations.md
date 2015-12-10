@@ -28,6 +28,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Shaka Technologies Ishlangu Load Balancer](https://www.shakatechnologies.com/) | C, Java | server, proxy | ALPN | h2
 [Jetty](http://git.eclipse.org/c/jetty/org.eclipse.jetty.project.git/tree/?h=master) | Java | client, intermediary, server | ALPN, Upgrade, Direct | h2, h2-17, h2-14, h2c, h2c-17
 [LiteSpeed Enterprise](http://www.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | h2, h2-17, h2-14, h2c
+[lua-http](https://github.com/daurnimator/lua-http/) | Lua | client, server | ALPN, direct | h2
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct | h2, h2-16, h2-14
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | h2
 [mod_h2](https://icing.github.io/mod_h2/) | C | Server | ALPN, Upgrade, direct | h2, h2c
