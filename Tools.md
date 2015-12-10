@@ -11,6 +11,7 @@
 * [Wireshark](https://wireshark.org/) has a [HTTP/2 decoder](https://wiki.wireshark.org/HTTP2)<sup>2</sup>.
 * [h2c](https://github.com/fstab/h2c) - A Simple HTTP/2 Command-Line Client
 * [h2spec](https://github.com/summerwind/h2spec) - Conformance testing tool for HTTP/2 implementations
+* [http2fuzz](https://github.com/c0nrad/http2fuzz) is a semi-intelligent fuzzer for HTTP/2.
 
 ---
 
