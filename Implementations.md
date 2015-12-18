@@ -43,7 +43,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | h2, h2c
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
 [second-transfer](https://github.com/alcidesv/second-transfer) | Haskell | server | ALPN | h2-14, h2
-[ShimmerCat](https://www.zunzun.se) | Haskell | server | ALPN, Ahead Of Time Transfer Engine | h2 
+[ShimmerCat](https://www.shimmercat.com) | Haskell | server | ALPN, Ahead Of Time Transfer Engine | h2 
 [Test GFE](testgfe) | C++ | intermediary | ALPN, NPN |
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
 [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | h2
