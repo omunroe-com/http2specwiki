@@ -5,7 +5,7 @@ If you have questions or issues updating it, please contact [Mark Nottingham](ma
 name | language | role(s) | negotiation(s) | protocol id(s)
 --- | --- | --- | --- | ---
 [Aerys](https://github.com/amphp/aerys) | PHP | server | ALPN, Upgrade, direct | h2, h2c
-[Akamai Ghost](Akamaighost) | C++ | intermediary | ALPN, NPN | h2, h2-14
+[Akamai GHost](AkamaiGHost) | C++ | intermediary | ALPN, NPN | h2, h2-14
 [Apache HTTP Server 2.4.17+](http://httpd.apache.org/) | C | server | ALPN, Upgrade, direct | h2, h2c
 [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN | h2, h2-14
 [http4s-blaze](https://github.com/http4s/blaze) | Scala | server | ALPN | h2, h2-14
