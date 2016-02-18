@@ -10,6 +10,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Apache Traffic Server v5.3.0](http://trafficserver.apache.org/) | C++ | intermediary | ALPN, NPN | h2, h2-14
 [http4s-blaze](https://github.com/http4s/blaze) | Scala | server | ALPN | h2, h2-14
 [Brocade Traffic Manager (formerly Riverbed/Zeus TM)](http://www.brocade.com/products/all/application-delivery-controllers/product-details/steelapp-traffic-manager/index.page) | C++ | Server | ALPN, Upgrade, direct | h2, h2c
+[Chatterbox](https://github.com/joedevivo/chatterbox) | Erlang | Server, Client | ALPN | h2
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | client | ALPN, NPN | h2, h2-14
 [Chicken Scheme hpack lib] (http://wiki.call-cc.org/eggref/4/hpack) | Chicken Scheme | hpack | direct | h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | client, server | NPN, direct | h2-14
@@ -21,6 +22,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [F5](F5)| C | server, proxy | ALPN, NPN | h2-14 (11.6.0 HF2) h2 (upcoming release)
 [H2O](https://github.com/h2o/h2o) | C | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | |
+[hpack](https://github.com/joedevivo/hpack) | Erlang | HPACK | n/a | h2
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | ALPN, NPN, Upgrade, direct | h2, h2c, h2-17
 [http2](https://golang.org/x/net/http2) | Go | client, server | NPN, ALPN    | h2, h2-14
 [HttpTwo](https://github.com/Redth/HttpTwo) | C# | client |  direct  | h2, h2c
