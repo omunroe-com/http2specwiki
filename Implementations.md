@@ -22,7 +22,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [F5](F5)| C | server, proxy | ALPN, NPN | h2-14 (11.6.0 HF2) h2 (upcoming release)
 [H2O](https://github.com/h2o/h2o) | C | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | HPACK, framing | |
-[hpack](https://github.com/joedevivo/hpack) | Erlang | HPACK | n/a | h2
+[hpack](https://github.com/joedevivo/hpack) | Erlang | HPACK |  | 
 [http-2](https://github.com/igrigorik/http-2) | Ruby | server, client | ALPN, NPN, Upgrade, direct | h2, h2c, h2-17
 [http2](https://golang.org/x/net/http2) | Go | client, server | NPN, ALPN    | h2, h2-14
 [HttpTwo](https://github.com/Redth/HttpTwo) | C# | client |  direct  | h2, h2c
