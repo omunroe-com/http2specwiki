@@ -26,7 +26,7 @@ Because HTTP/2 includes header compression, it is possible to use the protocol t
 
 ## Multiplexing
 
-Because a HTTP header block cannot be interrupted by other frame types, it is possible for attack traffic to block progress on other streams using the same connection. For example, if a proxy is muxing together traffic from a variety of clients onto a single connection to the origin server, and forwards a partial header set from an attacking client, that connection cannot be used for other clients' traffic until he header block is complete.
+Because a HTTP header block cannot be interrupted by other frame types, it is possible for attack traffic to block progress on other streams using the same connection. For example, if a proxy is muxing together traffic from a variety of clients onto a single connection to the origin server, and forwards a partial header set from an attacking client, that connection cannot be used for other clients' traffic until the header block is complete.
 
 Intermediaries can mitigate this attack in two ways:
 
