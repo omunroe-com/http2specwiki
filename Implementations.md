@@ -35,6 +35,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [lua-http](https://github.com/daurnimator/lua-http/) | Lua | client, server | ALPN, direct | h2
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | Server | NPN, direct | h2, h2-16, h2-14
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | Client, Server | ALPN | h2
+[Microsoft Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie) | | client | ALPN (others?) | h2 (Windows 10 only?)
 [mod_h2](https://icing.github.io/mod_h2/) | C | Server | ALPN, Upgrade, direct | h2, h2c
 [Mozilla Firefox](https://wiki.mozilla.org/Networking/http2) | C++ | client | ALPN, NPN | h2-15, h2-14, h2
 [Netty](http://netty.io/) | Java | client, server | ALPN, NPN, Upgrade, direct | h2, h2c
