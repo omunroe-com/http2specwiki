@@ -8,6 +8,7 @@
 * [nghttp](https://nghttp2.org/documentation/nghttp.1.html) is a non-interactive command line HTTP/2 client that has plenty of debugging options, such as changing flow control window, dumping frames, HTTP Upgrade etc.
 * [nghttpd](https://nghttp2.org/documentation/nghttpd.1.html) is a simple static file HTTP/2 server that is very handy to debug client side implementations.
 * [is-http2](https://github.com/stefanjudis/is-http2-cli) lets you quickly find out if a host supports H2 from the command line.
+* [HTTP/2 Test](https://tools.keycdn.com/http2-test) Online tool to check if a website supports HTTP/2.
 * [Wireshark](https://wireshark.org/) has a [HTTP/2 decoder](https://wiki.wireshark.org/HTTP2)<sup>2</sup>.
 * [h2c](https://github.com/fstab/h2c) - A Simple HTTP/2 Command-Line Client
 * [h2spec](https://github.com/summerwind/h2spec) - Conformance testing tool for HTTP/2 implementations
