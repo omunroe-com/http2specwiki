@@ -58,6 +58,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct |
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct |
 [WKWebView](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKWebView_Ref/) | Obj-C, Swift | client | |
+[http2](https://github.com/nekolunar/http2) | Go | server, client | ALPN, Upgrade | h2, h2c
 
 ## Older Implementations
 
