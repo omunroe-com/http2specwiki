@@ -1,0 +1,1 @@
+You can negotiate HTTP/2 with Google properties by advertising "h2" over ALPN. If you have any questions about Google's server-side support for HTTP/2, please contact Biren Roy (birenroy@google.com).
