@@ -100,6 +100,9 @@ Nancy's kids use mobile devices such as phones and tablets outside home. Nancy w
 
 _Currently, this user story's requirements can be met by inserting a CA into the trust store and performing TLS MITM on it, and/or by IP-level blocking._
 
+## Omid Kosari’s ISP data cap limitation or credit finished notification
+
+Omid Kosari uses an ISP for internet connection which redirects users to a reasonable web page when clients credit or data cap limit finished . With everything encrypted , it will be nearly impossible.
 
 ## Oscar’s Certification Company
  
