@@ -56,6 +56,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
 [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | h2
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade |
+[WASD](http://wasd.vsm.com.au/) | C (on VMS) | Server | ALPN, Upgrade, direct | h2, h2c
 [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct |
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct |
 [WKWebView](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKWebView_Ref/) | Obj-C, Swift | client | |
