@@ -46,6 +46,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Radware](https://www.radware.com/FastViewHTTP2/) | C++/C | proxy, server | ALPN | h2
 [NGINX](https://www.nginx.com/blog/nginx-1-9-5/) | C | server | ALPN, NPN, direct | h2, h2c
 [node-http2](https://github.com/molnarg/node-http2) | NodeJS | server, client | ALPN, NPN, direct | h2
+[node-spdy](https://github.com/indutny/node-spdy) | NodeJS | server, client | ALPN, NPN, direct | h2
 [OkHttp](https://github.com/square/okhttp) | Android, Java | mock server, client | ALPN, NPN | h2
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | h2, h2-17 , h2-14, h2c
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | h2, h2c
