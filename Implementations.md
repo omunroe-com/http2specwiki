@@ -57,6 +57,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
 [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | h2
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade |
+[Vert.x](http://vertx.io/) | Java | Client, Server | ALPN, Upgrade, direct | h2, h2c
 [WASD](http://wasd.vsm.com.au/) | C/OpenVMS | Server | ALPN, Upgrade, direct | h2, h2c
 [Warp](http://hackage.haskell.org/package/warp) | Haskell | Server | ALPN, direct |
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | other | ALPN, NPN, Upgrade, direct |
