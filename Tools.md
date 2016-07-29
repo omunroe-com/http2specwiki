@@ -16,7 +16,7 @@
 * [http2fuzz](https://github.com/c0nrad/http2fuzz) is a semi-intelligent fuzzer for HTTP/2.
 * [WProf](http://wprof.cs.washington.edu/) extracts dependencies of activities during a page load, to identify bottlenecks. 
 * [LoadRunner](http://community.hpe.com/t5/LoadRunner-and-Performance/How-to-gain-the-best-from-LoadRunner-s-support-of-HTTP-2/ba-p/6863547#.V1Yp7ZMrJZo) emulates HTTP/2 browsers (but not server push) to generate artificial load on servers as an enterprise-grade framework with GUI analytics.
-
+* [Vegeta](https://github.com/tsenart/vegeta) OS load tool that supports h2 through Go's (>= 1.6) net/http API
 ---
 
 <sup>1</sup> Curl is strictly an [implementation](Implementations), but it's listed here because many people use it as a tool.
