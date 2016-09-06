@@ -51,6 +51,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Fast Android Networking](https://github.com/amitshekhariitbhu/Fast-Android-Networking) | Android, Java | client | ALPN, NPN | h2
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | Server | ALPN, NPN, Upgrade | h2, h2-17 , h2-14, h2c
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | server, client | ALPN, NPN, Upgrade, direct | h2, h2c
+[River](https://github.com/peburrows/river) | Elixir | client | ALPN | h2
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
 [second-transfer](https://github.com/alcidesv/second-transfer) | Haskell | server | ALPN | h2-14, h2
 [ShimmerCat](https://www.shimmercat.com) | Haskell | server | ALPN, Ahead Of Time Transfer Engine | h2 
