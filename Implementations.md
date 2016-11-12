@@ -57,6 +57,7 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [ShimmerCat](https://www.shimmercat.com) | Haskell | server | ALPN, Ahead Of Time Transfer Engine | h2 
 [Swoole](https://github.com/swoole/swoole-src) | PHP | server | ALPN, NPN | h2 
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
+[Twisted](https://twistedmatrix.com) | Python | server | NPN, ALPN | h2, h2-16, h2-15, h2-14
 [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | h2
 [Undertow](https://http2.undertow.io) | Java | Server, Intermediary | ALPN, Upgrade |
 [Vert.x](http://vertx.io/) | Java | Client, Server | ALPN, Upgrade, direct | h2, h2c
