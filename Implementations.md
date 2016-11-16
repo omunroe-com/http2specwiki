@@ -55,8 +55,8 @@ name | language | role(s) | negotiation(s) | protocol id(s)
 [Sasazka](https://github.com/summerwind/sasazka) | NodeJS | server | NPN |
 [second-transfer](https://github.com/alcidesv/second-transfer) | Haskell | server | ALPN | h2-14, h2
 [ShimmerCat](https://www.shimmercat.com) | Haskell | server | ALPN, Ahead Of Time Transfer Engine | h2 
+[SuaveIO](https://github.com/SuaveIO/suave) | F# | server | | h2 (not yet ready, pull req: https://github.com/SuaveIO/suave/pull/434)
 [Swoole](https://github.com/swoole/swoole-src) | PHP | server | ALPN, NPN | h2 
-[SuaveIO](https://github.com/SuaveIO/suave) | F# | server | | h2
 [Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | client, server | ALPN, NPN, direct |
 [Twisted](https://twistedmatrix.com) | Python | server | NPN, ALPN | h2
 [Twitter](https://twitter.com/) | C++ | server, client | ALPN, NPN | h2
