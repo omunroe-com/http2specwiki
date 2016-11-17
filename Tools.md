@@ -17,6 +17,7 @@
 * [WProf](http://wprof.cs.washington.edu/) extracts dependencies of activities during a page load, to identify bottlenecks. 
 * [LoadRunner](http://community.hpe.com/t5/LoadRunner-and-Performance/How-to-gain-the-best-from-LoadRunner-s-support-of-HTTP-2/ba-p/6863547#.V1Yp7ZMrJZo) emulates HTTP/2 browsers (but not server push) to generate artificial load on servers as an enterprise-grade framework with GUI analytics.  
 * [Vegeta](https://github.com/tsenart/vegeta) OS load tool that supports h2 through Go's (>= 1.6) net/http API  
+* [HTTP/1 vs HTTP/2 speed test](https://www.dareboost.com/en/website-speed-test-http2-vs-http1) an online tool to test and compare speed of HTTP/2-ready websites, via HTTP/2 versus via HTTP/1 (disabling h2 support in Chrome) 
 
 ---
 
