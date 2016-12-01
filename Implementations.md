@@ -40,7 +40,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [Microsoft](https://github.com/http2/http2-spec/wiki/Microsoft-HTTP-2-Prototype) | C/C++ | | Client, Server | ALPN | h2
 [Microsoft Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie) | | | client | ALPN (others?) | h2 (Windows 10 only?)
 [mod_h2](https://icing.github.io/mod_h2/) | C | | Server | ALPN, Upgrade, direct | h2, h2c
-[Mozilla Firefox](https://wiki.mozilla.org/Networking/http2) | C++ | | client | ALPN, NPN | h2-15, h2-14, h2
+[Mozilla Firefox](https://wiki.mozilla.org/Networking/http2) | C++ | 49 | client | ALPN, NPN | h2-15, h2-14, h2 | http://caniuse.com/#search=http2
 [Netty](http://netty.io/) | Java | | client, server | ALPN, NPN, Upgrade, direct | h2, h2c
 [nghttp2](https://nghttp2.org) | C | | client, server, intermediary | ALPN, NPN, Upgrade, direct | h2, h2-16, h2-14, h2c
 [Radware](https://www.radware.com/FastViewHTTP2/) | C++/C | | proxy, server | ALPN | h2
