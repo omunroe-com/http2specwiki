@@ -10,6 +10,7 @@
 * [is-http2](https://github.com/stefanjudis/is-http2-cli) lets you quickly find out if a host supports H2 from the command line.
 * [jmeter](https://github.com/syucream/jmeter-http2-plugin) Jmeter HTTP/2 sampler via - Netty 5 and netty-tcnative &  hpack
 * [HTTP/2 Test](https://tools.keycdn.com/http2-test) is an online tool to check if a website supports HTTP/2.
+* [HTTP2.Pro](https://http2.pro) is an online tool to check HTTP/2, ALPN, and Push support of web sites.
 * [Wireshark](https://wireshark.org/) has a [HTTP/2 decoder](https://wiki.wireshark.org/HTTP2)<sup>2</sup>.
 * [h2c](https://github.com/fstab/h2c) - A Simple HTTP/2 Command-Line Client
 * [h2spec](https://github.com/summerwind/h2spec) - Conformance testing tool for HTTP/2 implementations
