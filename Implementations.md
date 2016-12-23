@@ -1,6 +1,6 @@
 **This wiki tracks known implementations of HTTP/2. See also our [Tools listing](Tools).**
 
-Please add your implementation below. If you have questions or issues, please contact [Mark Nottingham](mailto:mnot@mnot.net).
+Please add your implementation below. 
 
 name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 --- | --- | --- | --- | --- | --- | ---
