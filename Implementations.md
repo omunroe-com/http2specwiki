@@ -69,7 +69,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [http2](https://github.com/nekolunar/http2) | Go | | server, client | ALPN, Upgrade | h2, h2c
 [cashpack](https://github.com/Dridi/cashpack) | C | | HPACK | |
 [proxygen](https://github.com/facebook/proxygen) | C++ | | Server, Client | ALPN, NPN, Upgrade| h2
-[firefly](https://github.com/hypercube1024/firefly) | Java | | Server, Client | ALPN, Upgrade | h2
+[firefly](https://github.com/hypercube1024/firefly) | Java | | Server, Client | ALPN, Upgrade | h2, h2c
 
 ## Older Implementations
 
