@@ -9,8 +9,12 @@ Please note following:
 
 **Update**
 
-WinINet support HTTP2: https://msdn.microsoft.com/en-us/library/windows/desktop/aa385328.aspx  
++   WinINet support HTTP2: https://msdn.microsoft.com/en-us/library/windows/desktop/aa385328.aspx  
 `HTTP_PROTOCOL_FLAG_HTTP2 (0x2). Supported on Windows 10, version 1507 and later.`
 
-WinHTTP support HTTP2: https://msdn.microsoft.com/en-us/library/windows/desktop/aa384066.aspx  
++   WinHTTP support HTTP2: https://msdn.microsoft.com/en-us/library/windows/desktop/aa384066.aspx  
 `WINHTTP_PROTOCOL_FLAG_HTTP2 (0x1). Supported on Windows 10, version 1607 and newer`
+
++   HTTP.sys support HTTP2: https://msdn.microsoft.com/en-us/library/windows/desktop/mt219053(v=vs.85).aspx  
+`Server Push API HttpDeclarePush` 
++   Edge Dev Guide for HTTP2: https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/networking-and-connectivity/http2
