@@ -7,6 +7,7 @@
 * [h2load](https://nghttp2.org/documentation/h2load-howto.html) is a benchmarking / load generation tool for HTTP/2 and SPDY.
 * [nghttp](https://nghttp2.org/documentation/nghttp.1.html) is a non-interactive command line HTTP/2 client that has plenty of debugging options, such as changing flow control window, dumping frames, HTTP Upgrade etc.
 * [nghttpd](https://nghttp2.org/documentation/nghttpd.1.html) is a simple static file HTTP/2 server that is very handy to debug client side implementations.
+* [mitmproxy](https://mitmproxy.org/) is an interactive console program that allows traffic flows to be intercepted, inspected, modified and replayed. Can be used programmatically (Python).
 * [is-http2](https://github.com/stefanjudis/is-http2-cli) lets you quickly find out if a host supports H2 from the command line.
 * [jmeter](https://github.com/syucream/jmeter-http2-plugin) Jmeter HTTP/2 sampler via - Netty 5 and netty-tcnative &  hpack
 * [HTTP/2 Test](https://tools.keycdn.com/http2-test) is an online tool to check if a website supports HTTP/2.
