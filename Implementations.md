@@ -13,7 +13,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [Brocade Traffic Manager (formerly Riverbed/Zeus TM)](http://www.brocade.com/products/all/application-delivery-controllers/product-details/steelapp-traffic-manager/index.page) | C++ | | Server | ALPN, Upgrade, direct | h2, h2c
 [Chatterbox](https://github.com/joedevivo/chatterbox) | Erlang | | Server, Client | ALPN | h2
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | | client | ALPN | h2, h2-14
-[Chicken Scheme hpack lib] (http://wiki.call-cc.org/eggref/4/hpack) | Chicken Scheme | | hpack | direct | h2-14
+[Chicken Scheme hpack lib](http://wiki.call-cc.org/eggref/4/hpack) | Chicken Scheme | | hpack | direct | h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | | client, server | NPN, direct | h2-14
 [curl and libcurl](http://curl.haxx.se/) | C | | client | ALPN, NPN, Upgrade | h2-14, h2c-14
 [Dart](https://github.com/dart-lang/http2) | Dart | | client, server | ALPN, direct | h2
