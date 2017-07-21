@@ -4,6 +4,7 @@ Please add your implementation below.
 
 name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 --- | --- | --- | --- | --- | --- | ---
+[Ace](https://github.com/CrowdHailer/Ace) | Elixir | | server | ALPN | h2
 [Aerys](https://github.com/amphp/aerys) | PHP | | server | ALPN, Upgrade, direct | h2, h2c
 [Akamai GHost](AkamaiGHost) | C++ | | intermediary | ALPN, NPN | h2, h2-14
 [Apache HTTP Server 2.4.17+](http://httpd.apache.org/) | C | | server | ALPN, Upgrade, direct | h2, h2c
