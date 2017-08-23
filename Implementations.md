@@ -48,14 +48,15 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [nghttp2](https://nghttp2.org) | C | | client, server, intermediary | ALPN, NPN, Upgrade, direct | h2, h2-16, h2-14, h2c
 [Radware](https://www.radware.com/FastViewHTTP2/) | C++/C | | proxy, server | ALPN | h2
 [NGINX](https://www.nginx.com/blog/nginx-1-9-5/) | C | 1.9.5+ | server | ALPN, NPN, direct | h2, h2c | [Open Source NGINX 1.9.5 Released with HTTP/2 Support](https://www.nginx.com/blog/nginx-1-9-5/)
-[node-http2](https://github.com/molnarg/node-http2) | NodeJS | | server, client | ALPN, NPN, direct | h2
-[node-spdy](https://github.com/indutny/node-spdy) | NodeJS | | server, client | ALPN, NPN, direct | h2
+[Node.js](https://nodejs.org/api/http2.html) | Node.js | 8.4.0+ | server, client | ALPN, NPN, direct | h2, h2c
+[node-http2](https://github.com/molnarg/node-http2) | Node.js | | server, client | ALPN, NPN, direct | h2
+[node-spdy](https://github.com/indutny/node-spdy) | Node.js | | server, client | ALPN, NPN, direct | h2
 [OkHttp](https://github.com/square/okhttp) | Android, Java | | mock server, client | ALPN, NPN | h2
 [Fast Android Networking](https://github.com/amitshekhariitbhu/Fast-Android-Networking) | Android, Java | | client | ALPN, NPN | h2
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | | Server | ALPN, NPN, Upgrade | h2, h2-17 , h2-14, h2c
 [Protocol::HTTP2](https://github.com/vlet/p5-Protocol-HTTP2) | Perl | | server, client | ALPN, NPN, Upgrade, direct | h2, h2c
 [River](https://github.com/peburrows/river) | Elixir | | client | ALPN | h2
-[Sasazka](https://github.com/summerwind/sasazka) | NodeJS | | server | NPN |
+[Sasazka](https://github.com/summerwind/sasazka) | Node.js | | server | NPN |
 [second-transfer](https://github.com/alcidesv/second-transfer) | Haskell | | server | ALPN | h2-14, h2
 [ShimmerCat](https://www.shimmercat.com) | Haskell | | server | ALPN, Ahead Of Time Transfer Engine | h2 
 [SuaveIO](https://github.com/SuaveIO/suave) | F# | | server | | h2 (not yet ready, pull req: https://github.com/SuaveIO/suave/pull/434)
