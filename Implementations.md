@@ -62,7 +62,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [ShimmerCat](https://www.shimmercat.com) | Haskell | | server | ALPN, Ahead Of Time Transfer Engine | h2 
 [SuaveIO](https://github.com/SuaveIO/suave) | F# | | server | | h2 (not yet ready, pull req: https://github.com/SuaveIO/suave/pull/434)
 [Swoole](https://github.com/swoole/swoole-src) | PHP | | server | ALPN, NPN | h2 
-[Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | | client, server | ALPN, NPN, direct |
+[Trusterd](https://github.com/matsumoto-r/trusterd) | C/mruby | | client, server | ALPN, NPN, direct | h2, h2c
 [Twisted](https://twistedmatrix.com) | Python | | server | NPN, ALPN | h2
 [Twitter](https://twitter.com/) | C++ | | server, client | ALPN, NPN | h2
 [Undertow](https://http2.undertow.io) | Java | | Server, Intermediary | ALPN, Upgrade |
