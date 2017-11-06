@@ -31,6 +31,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [hpack](https://github.com/kylef/hpack.swift) | Swift | | HPACK |  | 
 [http-2](https://github.com/igrigorik/http-2) | Ruby | | server, client | ALPN, NPN, Upgrade, direct | h2, h2c, h2-17
 [http2](https://golang.org/x/net/http2) | Go | | client, server | NPN, ALPN    | h2, h2-14
+[http2](https://github.com/nekolunar/http2) | Go | | server, client | ALPN, Upgrade | h2, h2c
 [http2dotnet](https://github.com/Matthias247/http2dotnet) | C# | | server, client | ALPN & NPN (external), Upgrade, direct | h2, h2c
 [HttpTwo](https://github.com/Redth/HttpTwo) | C# | | client |  direct  | h2, h2c
 [httpbis](https://github.com/stepancheg/rust-http2) | Rust | | client, server | | 
@@ -71,7 +72,6 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [Warp](http://hackage.haskell.org/package/warp) | Haskell | | Server | ALPN, direct |
 [Wireshark](https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9042) | C | | other | ALPN, NPN, Upgrade, direct |
 [WKWebView](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKWebView_Ref/) | Obj-C, Swift | | client | |
-[http2](https://github.com/nekolunar/http2) | Go | | server, client | ALPN, Upgrade | h2, h2c
 [cashpack](https://github.com/Dridi/cashpack) | C | | HPACK | |
 [proxygen](https://github.com/facebook/proxygen) | C++ | | Server, Client | ALPN, NPN, Upgrade| h2
 [firefly](https://github.com/hypercube1024/firefly) | Java | | Server, Client | ALPN, Upgrade | h2, h2c
