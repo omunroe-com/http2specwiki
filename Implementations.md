@@ -36,7 +36,6 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [HttpTwo](https://github.com/Redth/HttpTwo) | C# | | client |  direct  | h2, h2c
 [httpbis](https://github.com/stepancheg/rust-http2) | Rust | | client, server | | 
 [hyper](http://python-hyper.org) | Python | | client, server | NPN, ALPN | h2, h2c
-[hyper](https://github.com/hyperium/hyper) | Rust | | client | Upgrade | h2
 [Shaka Technologies Ishlangu Load Balancer](https://www.shakatechnologies.com/) | C, Java | | server, proxy | ALPN | h2
 [Jetty](https://github.com/eclipse/jetty.project) | Java | | client, intermediary, server | ALPN, Upgrade, Direct | h2, h2-17, h2-14, h2c, h2c-17
 [LiteSpeed Enterprise](http://www.litespeedtech.com) | C++ | | Server | ALPN, NPN, Upgrade | h2, h2-17, h2-14, h2c
