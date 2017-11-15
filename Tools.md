@@ -10,7 +10,7 @@
 * [mitmproxy](https://mitmproxy.org/) is an interactive console program that allows traffic flows to be intercepted, inspected, modified and replayed. Can be used programmatically (Python).
 * [is-http2](https://github.com/stefanjudis/is-http2-cli) lets you quickly find out if a host supports H2 from the command line.
 * [jmeter](https://github.com/syucream/jmeter-http2-plugin) Jmeter HTTP/2 sampler via - Netty 5 and netty-tcnative &  hpack
-* [jmeter](https://www.blazemeter.com/blog/the-new-http2-plugin-for-jmeter-the-complete-guide) JMeter HTTP/2 Request sampler and View Result Tree Http2 listener plugin via [JMeter Plugins Manager] (https://jmeter-plugins.org/wiki/PluginsManager/)
+* [jmeter](https://www.blazemeter.com/blog/the-new-http2-plugin-for-jmeter-the-complete-guide) JMeter HTTP/2 Request sampler and View Result Tree Http2 listener plugin via JMeter Plugins Manager
 * [HTTP/2 Test](https://tools.keycdn.com/http2-test) is an online tool to check if a website supports HTTP/2.
 * [HTTP2.Pro](https://http2.pro) is an online tool to check HTTP/2, ALPN, and Push support of web sites.
 * [Wireshark](https://wireshark.org/) has a [HTTP/2 decoder](https://wiki.wireshark.org/HTTP2)<sup>2</sup>.
