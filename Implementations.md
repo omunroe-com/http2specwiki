@@ -25,6 +25,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [Ericsson MSP](EricssonMSP) | | | proxy | NPN, Upgrade, direct |  h2, h2-14, h2c, h2c-14
 [F5](F5)| C | | server, proxy | ALPN, NPN | h2-14 (11.6.0 HF2) h2 (upcoming release)
 [GFE](gfe) | C++ | | intermediary | ALPN, NPN | h2
+[HAProxy](http://www.haproxy.org/ | C | 1.8+ | intermediary | ALPN, NPN | h2 |
 [H2O](https://github.com/h2o/h2o) | C | | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | | HPACK, framing | |
 [hpack](https://github.com/joedevivo/hpack) | Erlang | | HPACK |  | 
