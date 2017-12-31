@@ -27,6 +27,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [GFE](gfe) | C++ | | intermediary | ALPN, NPN | h2
 [HAProxy](http://www.haproxy.org/) | C | 1.8+ | intermediary | ALPN, NPN | h2 |
 [H2O](https://github.com/h2o/h2o) | C | | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
+[HH](https://github.com/64/hh) | C | | Server | ALPN | h2 |
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | | HPACK, framing | |
 [hpack](https://github.com/joedevivo/hpack) | Erlang | | HPACK |  | 
 [hpack](https://github.com/kylef/hpack.swift) | Swift | | HPACK |  | 
