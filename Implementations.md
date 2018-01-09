@@ -34,6 +34,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [http-2](https://github.com/igrigorik/http-2) | Ruby | | server, client | ALPN, NPN, Upgrade, direct | h2, h2c, h2-17
 [http2](https://golang.org/x/net/http2) | Go | | client, server | NPN, ALPN    | h2, h2-14
 [http2](https://github.com/nekolunar/http2) | Go | | server, client | ALPN, Upgrade | h2, h2c
+[http2-client](https://github.com/lucasdicioccio/http2-client) | Haskell | | client | ALPN, direct | h2
 [http2dotnet](https://github.com/Matthias247/http2dotnet) | C# | | server, client | ALPN & NPN (external), Upgrade, direct | h2, h2c
 [HttpTwo](https://github.com/Redth/HttpTwo) | C# | | client |  direct  | h2, h2c
 [httpbis](https://github.com/stepancheg/rust-http2) | Rust | | client, server | | 
