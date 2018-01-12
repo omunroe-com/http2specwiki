@@ -26,6 +26,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [F5](F5)| C | | server, proxy | ALPN, NPN | h2-14 (11.6.0 HF2) h2 (upcoming release)
 [GFE](gfe) | C++ | | intermediary | ALPN, NPN | h2
 [HAProxy](http://www.haproxy.org/) | C | 1.8+ | intermediary | ALPN, NPN | h2 |
+[h2](https://github.com/carllerche/h2) | Rust | | client, server | | h2, h2c
 [H2O](https://github.com/h2o/h2o) | C | | Server, proxy | ALPN, NPN, Upgrade, direct | h2, h2-14, h2-16 |
 [HH](https://github.com/64/hh) | C | | Server | ALPN | h2 |
 [Haskell http2 lib](http://hackage.haskell.org/package/http2) | Haskell | | HPACK, framing | |
