@@ -42,6 +42,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [hyper](http://python-hyper.org) | Python | | client, server | NPN, ALPN | h2, h2c
 [Shaka Technologies Ishlangu Load Balancer](https://www.shakatechnologies.com/) | C, Java | | server, proxy | ALPN | h2
 [Jetty](https://github.com/eclipse/jetty.project) | Java | | client, intermediary, server | ALPN, Upgrade, Direct | h2, h2-17, h2-14, h2c, h2c-17
+[libcno](https://github.com/pyos/libcno) | C / Python wrapper | | Server, Client, HPACK | ALPN, Upgrade, direct | h2, h2c
 [LiteSpeed Enterprise](http://www.litespeedtech.com) | C++ | | Server | ALPN, NPN, Upgrade | h2, h2-17, h2-14, h2c
 [lua-http](https://github.com/daurnimator/lua-http/) | Lua | | client, server | ALPN, direct | h2
 [Lucid](https://github.com/tatsuhiro-t/lucid) | Erlang | | Server | NPN, direct | h2, h2-16, h2-14
