@@ -3,7 +3,7 @@
 
 
 * [Curl](http://curl.haxx.se) supports HTTP/2<sup>1</sup> as of 7.43.0. See its [documentation](http://curl.haxx.se/docs/http2.html) for details (including prerequisites).
-* [h2i](https://github.com/bradfitz/http2/tree/master/h2i) is a command-line interactive client that lets you send H2 frames, translate H1 to H2, and generally figure out how the protocol works.
+* [h2i](https://github.com/golang/net/tree/master/http2/h2i) is a command-line interactive client that lets you send H2 frames, translate H1 to H2, and generally figure out how the protocol works.
 * [h2load](https://nghttp2.org/documentation/h2load-howto.html) is a benchmarking / load generation tool for HTTP/2 and SPDY.
 * [nghttp](https://nghttp2.org/documentation/nghttp.1.html) is a non-interactive command line HTTP/2 client that has plenty of debugging options, such as changing flow control window, dumping frames, HTTP Upgrade etc.
 * [nghttpd](https://nghttp2.org/documentation/nghttpd.1.html) is a simple static file HTTP/2 server that is very handy to debug client side implementations.
