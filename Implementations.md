@@ -59,6 +59,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [Node.js](https://nodejs.org/api/http2.html) | Node.js | 8.4.0+ | server, client | ALPN, NPN, direct | h2, h2c
 [node-http2](https://github.com/molnarg/node-http2) | Node.js | | server, client | ALPN, NPN, direct | h2
 [node-spdy](https://github.com/indutny/node-spdy) | Node.js | | server, client | ALPN, NPN, direct | h2
+[nuster](https://github.com/jiangwenyuan/nuster) | C | 1.8+ | intermediary | ALPN, NPN | h2 |
 [OkHttp](https://github.com/square/okhttp) | Android, Java | | mock server, client | ALPN, NPN | h2
 [Fast Android Networking](https://github.com/amitshekhariitbhu/Fast-Android-Networking) | Android, Java | | client | ALPN, NPN | h2
 [OpenLiteSpeed](http://open.litespeedtech.com) | C++ | | Server | ALPN, NPN, Upgrade | h2, h2-17 , h2-14, h2c
