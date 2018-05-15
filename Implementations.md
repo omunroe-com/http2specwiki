@@ -17,7 +17,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [Chromium](https://sites.google.com/a/chromium.org/dev/spdy/http2) | C++ | | client | ALPN | h2, h2-14
 [Chicken Scheme hpack lib](http://wiki.call-cc.org/eggref/4/hpack) | Chicken Scheme | | hpack | direct | h2-14
 [cl-http2-protocol](https://github.com/akamai/cl-http2-protocol) | Common Lisp | | client, server | NPN, direct | h2-14
-[curl and libcurl](http://curl.haxx.se/) | C | | client | ALPN, NPN, Upgrade | h2-14, h2c-14
+[curl and libcurl](http://curl.haxx.se/) | C | | client | ALPN, NPN, Upgrade, Direct | h2-14, h2c-14
 [Cutelyst](https://cutelyst.org) | C++ | 2.0+ | Server | ALPN, NPN, Upgrade, Direct | h2, h2c
 [Dart](https://github.com/dart-lang/http2) | Dart | | client, server | ALPN, direct | h2
 [Deuterium](http://robbysimpson.com/deuterium) | C | | client, server | ALPN, direct | h2, h2-14, h2c, h2c-14
