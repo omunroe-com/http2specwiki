@@ -82,7 +82,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [cashpack](https://github.com/Dridi/cashpack) | C | | HPACK | |
 [proxygen](https://github.com/facebook/proxygen) | C++ | | Server, Client | ALPN, NPN, Upgrade| h2
 [firefly](https://github.com/hypercube1024/firefly) | Java | | Server, Client | ALPN, Upgrade | h2, h2c
-
+[heaphttpd](https://github.com/uplusware/heaphttpd) | C++ | | Server | ALPN, Upgrade | h2, h2c
 ## Older Implementations
 
 name | version | language | role(s) | negotiation(s) | protocol id(s) | refer
