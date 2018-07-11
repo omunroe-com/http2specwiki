@@ -83,7 +83,7 @@ name | language | version | role(s) | negotiation(s) | protocol id(s) | refer |
 [proxygen](https://github.com/facebook/proxygen) | C++ | | Server, Client | ALPN, NPN, Upgrade| h2
 [firefly](https://github.com/hypercube1024/firefly) | Java | | Server, Client | ALPN, Upgrade | h2, h2c
 [heaphttpd](https://github.com/uplusware/heaphttpd) | C++ | | Server | ALPN, Upgrade | h2, h2c
-[HTTP-2-server](https://github.com/kape142/HTTP-2-server) | C# | | Server | ALPN, Upgrade | h2, h2c
+[HTTP-2-server](https://github.com/kape142/HTTP-2-server) | C# | 0.1.0| Server | ALPN, Upgrade | h2, h2c
 ## Older Implementations
 
 name | version | language | role(s) | negotiation(s) | protocol id(s) | refer
